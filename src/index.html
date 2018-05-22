@@ -6,7 +6,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <!-- HEADER -->
+      <header>
+        <div class="top_bar">
+          <div class="logo_container">
+            <div class="logo">
+              <a href="#">
+                <div class="logo_line_1"><span>Caesar</span>Cipher</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- CIPHER AREA -->
+      <div class="father_container">
+        <div class="cipher_information">
+          Explicacion de la aplicacion
+        </div>
+        <div class="introducing_text">
+          <label for="msg">Introduzca el texto que desea cifrar/descifrar:</label>
+          <textarea id="msg" name="cipher_message"></textarea>
+        </div>
+        <div class="introducing_number">
+          <label for="number">Digite un numero para cifrado/descifrado:</label>
+          <input type="number" id="number" name="cipher_number" />
+        </div>
+        <div class="button">
+          <button type="submit" onclick="">Cifrar</button>
+          <button type="submit" onclick="">Descifrar</button>
+        </div>
+        <div class="cipher_text">
+          <label for="msg">Texto descifrado/cifrado:</label>
+          <textarea id="msg" name="cipher_text"></textarea>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+
+      </footer>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
