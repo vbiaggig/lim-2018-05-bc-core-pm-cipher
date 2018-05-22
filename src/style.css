@@ -1,0 +1,124 @@
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Top bar
+4.
+5. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face
+{
+	font-family: 'gill';
+	src: url('../fonts/gil.ttf')  format('truetype');
+}
+@font-face
+{
+	font-family: 'gill';
+	src: url('../fonts/gil_b.ttf')  format('truetype');
+	font-weight: bold;
+}
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #a5a5a5;
+}
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+#root
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+/*********************************
+3.1 Top bar
+*********************************/
+
+.top_bar
+{
+    background: #11100e;
+    width: 100%;
+	height: 86px;
+}
+.logo_container
+{
+	transform: translateY(12px);
+}
+.logo
+{
+	padding-left: 63px;
+}
+.logo_line_1
+{
+	font-family: 'gill', sans-serif;
+	font-size: 30px;
+	line-height: 0.75;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 15px;
+}
+.logo_line_1 span
+{
+	color:  #85c1e9;
+	font-weight: bold;
+}
