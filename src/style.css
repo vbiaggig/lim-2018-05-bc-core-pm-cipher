@@ -154,6 +154,9 @@ textarea{
 	height: 5em;
 	resize: vertical;
 	width: 70%;
+	color: black;
+	background-color: #dbd5f2;
+	border: none;
 }
 .button {
     margin-left: 31%;
