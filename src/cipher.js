@@ -26,6 +26,3 @@ function cipherEncode(string, offset) {
 function cipherDecode(string,offset) {
     return cipherEncode(string, 26-offset)
 }
-function buttonEncode(){
-    cipher.encode()
-}
