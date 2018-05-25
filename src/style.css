@@ -1,0 +1,295 @@
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Top bar
+4.
+5. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face
+{
+	font-family: 'gill';
+	src: url('../fonts/gil.ttf')  format('truetype');
+}
+@font-face
+{
+	font-family: 'gill';
+	src: url('../fonts/gil_b.ttf')  format('truetype');
+	font-weight: bold;
+}
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #f5f9fa;
+	color: #494646;
+}
+div{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, a:hover, a:visited, a:active, a:link{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+#root{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+/*********************************
+3.1 Top bar
+*********************************/
+
+.top_bar{
+    background: #11100e;
+    width: 100%;
+	height: 86px;
+}
+.logo_container{
+	transform: translateY(12px);
+}
+.logo{
+	padding-left: 63px;
+}
+.logo_line_1{
+	font-family: 'gill', sans-serif;
+	font-size: 30px;
+	line-height: 0.75;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+    color: #f5f9fa;
+    padding-top: 15px;
+}
+.logo_line_1 span{
+	color:  #85c1e9;
+	font-weight: bold;
+}
+
+/*********************************
+4 CIPHER INFORMATION
+*********************************/
+.cipher_information
+{
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background: #f5f9fa;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.col{
+	position:relative;
+	width:100%;
+	min-height:1px;
+	padding-right:15px;
+	padding-left:15px;
+	-ms-flex:0 0 50%;
+	flex:0 0 50%;
+	max-width:50%
+}
+.information_image
+{
+	max-width: 83%;
+	/*height: 394px;*/
+	margin-right: 66px;
+	text-align:right!important;
+	text-align:center!important;
+	margin-left: 18%;
+}
+.information_image img
+{
+	max-width: 83%;
+}
+.information_title
+{
+	font-family: 'gill', sans-serif;
+	color: #212121;
+	margin-top: -1px;
+}
+.information_subtitle
+{
+	font-family: 'gill', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #a5a5a5;
+	padding-left: 6px;
+	padding-top: 30px;
+}
+.information_subtitle::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 68px;
+	height: 3px;
+	background: #85c1e9;
+	content: '';
+}
+.information_text
+{
+	margin-top: 32px;
+}
+.information_text p:last-of-type
+{
+	margin-bottom: 0;
+}
+.information_button
+{
+	margin-top: 39px;
+}
+.information_button
+{
+	width: 180px;
+	height: 65px;
+	background: #85c1e9;
+	text-align: center;
+}
+.information_button a
+{
+	display: block;
+	position: relative;
+	line-height: 59px;
+	font-family: 'gill', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	z-index: 1;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.information_button a::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+	content: '';
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	z-index: -1;
+}
+.information_button:hover a::after
+{
+	width: 100%;
+	opacity: 1;
+}
+.information_button:hover a
+{
+	color: #85c1e9;
+}
+
+/*********************************
+4 Cipher area
+*********************************/
+.father_container{
+	background-color: #f5f9fa;
+	color: #11100e;
+	margin: 0 auto;
+	width: 70%;
+	padding: 3em;
+}
+.introducing_text , .introducing_number , .button , .cipher_text{
+	margin: 20px 0 20px 0;
+}
+label {
+	display: inline-block;
+    text-align: left;
+}
+input, textarea {
+    font: 1em sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border: 1px solid #999;
+	display: block;
+	margin: 9px auto 0 auto;
+}
+input{
+	width: 90px;
+}
+input:focus{
+	border-color: #000000;
+}
+textarea{
+	vertical-align: top;
+	height: 5em;
+	resize: vertical;
+	width: 70%;
+	color: black;
+	background-color: #dbd5f2;
+	border: none;
+}
+.button {
+    margin-left: 31%;
+}
+button {
+	width: 90px;
+	margin: 0 50px 0 50px;
+}
