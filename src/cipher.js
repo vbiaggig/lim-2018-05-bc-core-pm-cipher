@@ -1,5 +1,5 @@
 window.cipher = {
-    encode: (string, offset) => {
+    encode: (offset, string) => {
       let ciphertext = '';
       offset = offset % 26;
       for(let i=0 ; i < string.length ; i++) {
@@ -17,7 +17,7 @@ window.cipher = {
       
       return ciphertext;
     },
-    decode: (string, offset) => {
+    decode: (offset, string) => {
         let ciphertext = '';
         offset = offset % 26;
         for(let i=0 ; i < string.length ; i++) {

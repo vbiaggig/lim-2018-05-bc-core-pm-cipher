@@ -21,12 +21,12 @@ document.getElementById("buttonEncode").addEventListener("click", ()=>{
     const cipher_message = document.getElementById("cipher_message").value;
     const shift = parseInt(document.getElementById("shift").value);
     const cipher_text = document.getElementById("cipher_text");
-    cipher_text.innerHTML = cipher.encode(cipher_message,shift);
+    cipher_text.innerHTML = cipher.encode(shift, cipher_message);
 });
 
 document.getElementById("buttonDecode").addEventListener("click", ()=>{
     const cipher_message = document.getElementById("cipher_message").value;
     const shift = parseInt(document.getElementById("shift").value);
     const cipher_text = document.getElementById("cipher_text");
-    cipher_text.innerHTML = cipher.decode(cipher_message,shift);
+    cipher_text.innerHTML = cipher.decode(shift, cipher_message);
 });
