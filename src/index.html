@@ -33,15 +33,25 @@
               <h1 class="information_title">Caesar Cipher</h1>
             </div>
             <div class="information_text">
-              <p>Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta en te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.</p>
+              <p>Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta en te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el <strong>shift</strong> que usaste.</p>
             </div>
             <div type="submit" class="information_button" id="button"><a href="#">CIFRA/DESCIFRA AQUI</a></div>
           </div>
         </div>
       </div>
 
+      <!-- CIPHER STEPS -->
+      <div id="cipher_steps">
+        <p>Es muy fácil de usar: </p>
+        <div id="steps">
+          <p>1er paso. En el primer text area (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
+          <p>2do paso. En el input number (número de entrada) introduce un digito (número) para que tu cifrado empiece desde donde tú quieras, o en el caso de que quieras descifrar, coloca el digito que te han indicado.</p>
+          <p>3er paso. Dale "click" en el botón cifrar, si deseas cifrar, o en el botón descifrar, si deseas descifrar el mensaje.</p>
+          <p>4to paso. En el segundo text area te saldrá el texto cifrado/descifrado y si deseas copiarlo solo haz "click" en el botón que dice copiar texto y se guardará automáticamente en tu portapapeles.</p>
+        </div>
+      </div>
+
       <!-- CIPHER AREA -->
-      
       <div class="father_container" id="cipher_area" style="display:none">
         <div class="introducing_text">
           <label for="msg">Introduzca el texto que desea cifrar/descifrar:</label>
@@ -60,7 +70,7 @@
           <textarea id="cipher_text" name="cipher_text" disabled></textarea>
         </div>
         <div class="copy_text">
-          <center> <button id="buttonCopyText"><img src="images/papers.png" alt="">click para copiar texto !</button> </center>
+          <center> <button id="buttonCopyText"><img src="images/papers.png" alt="">copiar texto</button> </center>
         </div>
       </div>
 

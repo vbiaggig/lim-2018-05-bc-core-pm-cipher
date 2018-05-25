@@ -9,7 +9,8 @@
 3. Header
 	3.1 Top bar
 4. CIPHER INFORMATION
-5. CIPHER AREA
+5. CIPHER STEPS
+6. CIPHER AREA
 
 
 ******************************/
@@ -247,7 +248,19 @@ a, a:hover, a:visited, a:active, a:link{
 }
 
 /*********************************
-5 CIPHER AREA
+5 CIPHER STEPS
+*********************************/
+#cipher_steps{
+	margin: 3%;
+	color: #11100e;
+}
+#steps{
+	margin-left: 3%;
+	margin-top: 3px;
+}
+
+/*********************************
+6 CIPHER AREA
 *********************************/
 .father_container{
 	background-color: #f5f9fa;
