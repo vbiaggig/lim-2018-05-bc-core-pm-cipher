@@ -37,14 +37,14 @@ sistema ROT13.
 
 ## Code Samples
 
- <script>
+><script>
     window.cipher = {
        encode: (string, offset) => {
        },
        decode: (string, offset) => {
        }
     }
-  </script>
+ </script>
 
 ## Installation
 
