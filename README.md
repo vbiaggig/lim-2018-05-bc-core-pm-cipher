@@ -37,8 +37,7 @@ sistema ROT13.
 
 ## Code Samples
 
-js - javascript
-
+>
     window.cipher = {
        encode: (string, offset) => {
        },
