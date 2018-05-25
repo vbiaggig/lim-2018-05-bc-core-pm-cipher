@@ -13,7 +13,7 @@
         <div class="top_bar">
           <div class="logo_container">
             <div class="logo">
-              <a href="#">
+              <a href="" id="principal">
                 <div class="logo_line_1"><span>Caesar</span>Cipher</div>
               </a>
             </div>
@@ -21,11 +21,30 @@
         </div>
       </header>
 
-      <!-- CIPHER AREA -->
-      <div class="cipher_information">
-        En criptografía, la carla César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+      <!-- CIPHER INFORMATION -->
+      <div class="cipher_information" id="container">
+        <div class="col">
+          <div class="information_image"><img src="images/cipher.png" alt=""></div>
+        </div>
+        <div class="col">
+          <div class="information_content">
+            <div class="information_title_container">
+              <div class="information_subtitle">cifrado para tus mensajes secretos</div>
+              <h1 class="information_title">Caesar Cipher</h1>
+            </div>
+            <div class="information_text">
+              <p>Está próxima la fecha del cumpleaños de tu flacx (novix) y estás organizando una fiesta sorpresa. Para organizar la fiesta has creado un grupo de Whatsapp junto con amigos y familiares.
+
+                Un gran problema es que pones tu alarma para levantarte temprano, sin embargo (como supondrás) eso nunca sucede y tu flacx es quien termina apagando la alarma y "de casualidad" revisando tus mensajes. Debido a que es algo sorpresa, abres esta aplicación que te permite cifrar mensajes y que las demás personas (partícipes de la fiesta) tienen esta interfaz para poder descifrarlo.</p>
+            </div>
+            <div type="submit" class="information_button" id="button"><a href="#">CIFRA/DESCIFRA AQUI</a></div>
+          </div>
+        </div>
       </div>
-      <div class="father_container">
+
+      <!-- CIPHER AREA -->
+      
+      <div class="father_container" id="cipher_area" style="display:none">
         <div class="introducing_text">
           <label for="msg">Introduzca el texto que desea cifrar/descifrar:</label>
           <textarea id="cipher_message" name="cipher_message"></textarea>
@@ -35,8 +54,8 @@
           <input type="number" id="shift" name="cipher_number" value="0" min="0"/>
         </div>
         <div class="button">
-          <button type="submit" onclick="buttonEncode()" >Cifrar</button>
-          <button type="submit" onclick="buttonDecode()" >Descifrar</button>
+          <button type="submit" id="buttonEncode" >Cifrar</button>
+          <button type="submit" id="buttonDecode" >Descifrar</button>
         </div>
         <div class="cipher_text">
           <label for="msg">Texto descifrado/cifrado:</label>

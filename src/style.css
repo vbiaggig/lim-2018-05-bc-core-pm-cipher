@@ -45,8 +45,8 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
-	color: #a5a5a5;
+	background: #f5f9fa;
+	color: #494646;
 }
 div{
 	display: block;
@@ -104,7 +104,7 @@ a, a:hover, a:visited, a:active, a:link{
 	line-height: 0.75;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-    color: #FFFFFF;
+    color: #f5f9fa;
     padding-top: 15px;
 }
 .logo_line_1 span{
@@ -113,16 +113,144 @@ a, a:hover, a:visited, a:active, a:link{
 }
 
 /*********************************
+4 CIPHER INFORMATION
+*********************************/
+.cipher_information
+{
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background: #f5f9fa;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.col{
+	position:relative;
+	width:100%;
+	min-height:1px;
+	padding-right:15px;
+	padding-left:15px;
+	-ms-flex:0 0 50%;
+	flex:0 0 50%;
+	max-width:50%
+}
+.information_image
+{
+	max-width: 83%;
+	/*height: 394px;*/
+	margin-right: 66px;
+	text-align:right!important;
+	text-align:center!important;
+	margin-left: 18%;
+}
+.information_image img
+{
+	max-width: 83%;
+}
+.information_title
+{
+	font-family: 'gill', sans-serif;
+	color: #212121;
+	margin-top: -1px;
+}
+.information_subtitle
+{
+	font-family: 'gill', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #a5a5a5;
+	padding-left: 6px;
+	padding-top: 30px;
+}
+.information_subtitle::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 68px;
+	height: 3px;
+	background: #85c1e9;
+	content: '';
+}
+.information_text
+{
+	margin-top: 32px;
+}
+.information_text p:last-of-type
+{
+	margin-bottom: 0;
+}
+.information_button
+{
+	margin-top: 39px;
+}
+.information_button
+{
+	width: 180px;
+	height: 65px;
+	background: #85c1e9;
+	text-align: center;
+}
+.information_button a
+{
+	display: block;
+	position: relative;
+	line-height: 59px;
+	font-family: 'gill', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	z-index: 1;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.information_button a::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+	content: '';
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	z-index: -1;
+}
+.information_button:hover a::after
+{
+	width: 100%;
+	opacity: 1;
+}
+.information_button:hover a
+{
+	color: #85c1e9;
+}
+
+/*********************************
 4 Cipher area
 *********************************/
-.cipher_information{
-	padding: 3.5%;
-	background-color: #85c1e9;
-	font-weight: bold;
-	color: #11100e;
-	text-align: justify;
-}
 .father_container{
+	background-color: #f5f9fa;
 	color: #11100e;
 	margin: 0 auto;
 	width: 70%;
