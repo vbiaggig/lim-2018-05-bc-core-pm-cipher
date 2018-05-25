@@ -1,6 +1,6 @@
 ﻿# Caesar Cipher
 
-Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocidos, CIFRADO CESAR. Estos mensajes no son entendibles a simple vista para ello, esta aplicación también te ayuda a descifrar los mensajes,
+Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocidos, "CIFRADO CESAR". Estos mensajes no son entendibles a simple vista para ello, esta aplicación también te ayuda a descifrar los mensajes.
 
 
 ## Preámbulo
@@ -37,7 +37,8 @@ sistema ROT13.
 
 ## Ejemplo de código
 
-> window.cipher = {
+> 
+  window.cipher = {
        encode: (string, offset) => {
        },
        decode: (string, offset) => {
@@ -48,4 +49,4 @@ sistema ROT13.
 
 ## APP
 
-Puedes entrar a la app https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/index.html
+Puedes entrar a la app <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/index.html>
