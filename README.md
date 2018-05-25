@@ -37,15 +37,15 @@ sistema ROT13.
 
 ## Code Samples
 
->
-    window.cipher = {
+>window.cipher = {
        encode: (string, offset) => {
        },
        decode: (string, offset) => {
        }
-    }
+ }
+    
 
 
 ## Installation
 
-Puedes entrar a la app https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/index.html
+Puedes entrar a la app 
