@@ -1,11 +1,12 @@
 document.getElementById("button").addEventListener("click", () => {
     document.getElementById("cipher_area").style.display = "";
-    document.getElementById("container").style.display = "none";
+    document.getElementById("cipher_information").style.display = "none";
+    document.getElementById("cipher_steps").style.display = "";
 });
 
 document.getElementById("principal").addEventListener("click", () => {
     document.getElementById("cipher_area").style.display = "none";
-    document.getElementById("container").style.display = "";
+    document.getElementById("cipher_information").style.display = "";
 });
 
 document.getElementById("buttonCopyText").addEventListener("click", ()=>{

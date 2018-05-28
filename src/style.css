@@ -11,7 +11,10 @@
 4. CIPHER INFORMATION
 5. CIPHER STEPS
 6. CIPHER AREA
-
+7. Responsive
+	7.1.
+	7.2.
+	7.3.
 
 ******************************/
 
@@ -65,6 +68,40 @@ a, a:hover, a:visited, a:active, a:link{
 #root{
 	width: 100%;
 	overflow: hidden;
+}
+p{
+	text-align: justify;
+}
+.row{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.col{
+	position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+	padding-left:15px;
+}
+.col-4{
+	-ms-flex:0 0 25%;
+	flex:0 0 25%;
+	max-width:25%;
+}
+.text-center{
+	text-align:center!important;
+}
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*********************************
@@ -128,7 +165,7 @@ a, a:hover, a:visited, a:active, a:link{
 	margin-right:-15px;
 	margin-left:-15px;
 }
-.col{
+.col-2{
 	position:relative;
 	width:100%;
 	min-height:1px;
@@ -136,7 +173,7 @@ a, a:hover, a:visited, a:active, a:link{
 	padding-left:15px;
 	-ms-flex:0 0 50%;
 	flex:0 0 50%;
-	max-width:50%
+	max-width:50%;
 }
 .information_image
 {
@@ -146,6 +183,10 @@ a, a:hover, a:visited, a:active, a:link{
 	text-align:right!important;
 	text-align:center!important;
 	margin-left: 18%;
+}
+.information_image2
+{
+	display: none;
 }
 .information_image img
 {
@@ -180,7 +221,7 @@ a, a:hover, a:visited, a:active, a:link{
 }
 .information_text
 {
-	margin-top: 32px;
+	margin: 32px 2% 0 0;
 }
 .information_text p:last-of-type
 {
@@ -250,13 +291,76 @@ a, a:hover, a:visited, a:active, a:link{
 /*********************************
 5 CIPHER STEPS
 *********************************/
-#cipher_steps{
-	margin: 3%;
-	color: #11100e;
+.cipher_steps
+{
+	padding: 50px 0;
+	background: #f5f9fa;
 }
-#steps{
-	margin-left: 3%;
-	margin-top: 3px;
+.section_title_container
+{
+	width: 100%;
+}
+.section_title
+{
+	font-family: 'gill', sans-serif;
+	font-size: 40px;
+	color: #212121;
+	margin-top: -7px;
+}
+.section_subtitle
+{
+	position: relative;
+	font-family: 'gill', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #a5a5a5;
+	padding-top: 30px;
+}
+.section_subtitle::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 68px;
+	height: 3px;
+	background: #ffa800;
+	content: '';
+}
+.cipher_steps_row
+{
+	margin-top: 79px;
+}
+.cipher_steps_image
+{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+.cipher_steps_image img
+{
+	max-width: 100%;
+}
+.cipher_steps_title
+{
+	font-family: 'gill', sans-serif;
+	font-size: 22px;
+	color: #212121;
+	margin-top: 11px;
+}
+.cipher_steps_text
+{
+	margin-top: 32px;
+}
+.cipher_steps_text p:last-of-type
+{
+	margin-bottom: 0;
 }
 
 /*********************************
@@ -305,4 +409,170 @@ textarea{
 button {
 	width: 90px;
 	margin: 0 50px 0 50px;
+}
+
+/*********************************
+7. Responsive
+*********************************/
+
+/*********************************
+7.1. 1200px
+*********************************/
+
+@media (min-width:1200px){
+	.container{
+		max-width: 1170px;
+	}
+}
+
+/*********************************
+7.1. 992px
+*********************************/
+@media (min-width:992px){
+	.container{
+		max-width: 960px;
+	}
+}
+
+/*********************************
+7.1. 768px
+*********************************/
+
+@media only screen and (max-width: 768px)
+{
+	.logo
+	{
+		padding-left: 55px;
+	}
+	.logo_line_1
+	{
+		font-size: 24px;
+	}
+	.container{
+		max-width: 720px;
+	}
+}
+
+/*********************************
+7.2. 576px
+*********************************/
+
+@media only screen and (max-width: 576px)
+{
+	p{
+		font-size: 12px;
+	}
+	h1{
+		font-size: 28px;
+	}
+	.logo
+	{
+		padding-left: 46px;
+	}
+	.logo_line_1
+	{
+		font-size: 20px;
+	}
+	.link_button
+	{
+		width: 120px;
+		height: 40px;
+	}
+	.information_button a
+	{
+		font-size: 10px;
+		line-height: 40px;
+	}
+	.information_image
+	{
+		margin-right: 0;
+	}
+	.information_subtitle
+	{
+		font-size: 10px;
+		padding-left: 1px;
+	}
+	.information_subtitle::after
+	{
+		left: 2px;
+	}
+	.container{
+		max-width: 540px;
+	}
+}
+
+/*********************************
+7.2. 480px
+*********************************/
+
+@media only screen and (max-width: 480px){
+	html, #root{
+		height: 480px;
+	}
+	.logo_line_1{
+		font-size: 24px;
+	}
+	.top_bar{
+		height: 70px;
+	}
+	.cipher_information{
+		padding: 6% 0;
+		display: inline;
+		position: relative;
+	}
+	.col-2{
+		flex: 0;
+		max-width: 100%;
+	}
+	.information_image{
+		display: none;
+	}
+	.information_image2{
+		display: inline-block;
+		margin: 5px;
+		width: 12%;
+		height: 56px;
+	}
+	.information_image2 img{
+		width: 56px;
+		height: 56px;
+	}
+	.information_title_container{
+		display: inline-block;
+		width: 82%;
+		text-align: right;
+	}
+	.information_subtitle{
+		font-size: 12px;
+	}
+	.information_subtitle::after {
+		left: 81%;
+	}
+	.information_button{
+		height: 40px;
+		margin-left: 50px;
+		width: 71%;
+		font-size: 14px;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+
+
+/*********************************
+7.2. 320px
+*********************************/
+
+@media only screen and (max-width: 320px){
+	.logo{
+		padding: 0%;
+		text-align: center;
+	}
+	.logo_line_1{
+		font-size: 28px;
+	}
+	.top_bar{
+		height: 77px;
+	}
 }
