@@ -291,24 +291,21 @@ p{
 /*********************************
 5 CIPHER STEPS
 *********************************/
-.cipher_steps
-{
-	padding: 50px 0;
+.cipher_steps{
+	padding-top: 110px;
+	padding-bottom: 110px;
 	background: #f5f9fa;
 }
-.section_title_container
-{
+.section_title_container{
 	width: 100%;
 }
-.section_title
-{
+.section_title{
 	font-family: 'gill', sans-serif;
 	font-size: 40px;
 	color: #212121;
 	margin-top: -7px;
 }
-.section_subtitle
-{
+.section_subtitle{
 	position: relative;
 	font-family: 'gill', sans-serif;
 	font-size: 12px;
@@ -317,8 +314,7 @@ p{
 	color: #a5a5a5;
 	padding-top: 30px;
 }
-.section_subtitle::after
-{
+.section_subtitle::after{
 	display: block;
 	position: absolute;
 	top: 0;
@@ -330,36 +326,30 @@ p{
 	transform: translateX(-50%);
 	width: 68px;
 	height: 3px;
-	background: #ffa800;
+	background: #85c1e9;
 	content: '';
 }
-.cipher_steps_row
-{
+.cipher_steps_row{
 	margin-top: 79px;
 }
-.cipher_steps_image
-{
+.cipher_steps_image{
 	width: 70px;
 	height: 70px;
 	margin: 0 auto;
 }
-.cipher_steps_image img
-{
+.cipher_steps_image img{
 	max-width: 100%;
 }
-.cipher_steps_title
-{
+.cipher_steps_title{
 	font-family: 'gill', sans-serif;
 	font-size: 22px;
 	color: #212121;
 	margin-top: 11px;
 }
-.cipher_steps_text
-{
+.cipher_steps_text{
 	margin-top: 32px;
 }
-.cipher_steps_text p:last-of-type
-{
+.cipher_steps_text p:last-of-type{
 	margin-bottom: 0;
 }
 
@@ -461,38 +451,31 @@ textarea{
 	p{
 		font-size: 12px;
 	}
-	h1{
+	h1, .section_title{
 		font-size: 28px;
 	}
-	.logo
-	{
+	.logo{
 		padding-left: 46px;
 	}
-	.logo_line_1
-	{
+	.logo_line_1{
 		font-size: 20px;
 	}
-	.link_button
-	{
+	.link_button{
 		width: 120px;
 		height: 40px;
 	}
-	.information_button a
-	{
+	.information_button a{
 		font-size: 10px;
 		line-height: 40px;
 	}
-	.information_image
-	{
+	.information_image{
 		margin-right: 0;
 	}
-	.information_subtitle
-	{
+	.information_subtitle, .section_subtitle{
 		font-size: 10px;
 		padding-left: 1px;
 	}
-	.information_subtitle::after
-	{
+	.information_subtitle::after, .section_subtitle{
 		left: 2px;
 	}
 	.container{
@@ -514,14 +497,20 @@ textarea{
 	.top_bar{
 		height: 70px;
 	}
-	.cipher_information{
+	.cipher_information, .cipher_steps{
 		padding: 6% 0;
 		display: inline;
 		position: relative;
 	}
+	.container{
+		padding-top: 6%;
+	}
 	.col-2{
 		flex: 0;
 		max-width: 100%;
+	}
+	.col{
+		text-align: right !important;
 	}
 	.information_image{
 		display: none;
@@ -536,15 +525,18 @@ textarea{
 		width: 56px;
 		height: 56px;
 	}
-	.information_title_container{
+	.information_title_container, .section_title_container{
 		display: inline-block;
 		width: 82%;
-		text-align: right;
 	}
-	.information_subtitle{
+	/*.section_title{
+		text-align: right !important;
+	}*/
+	.information_subtitle, .section_subtitle{
+		/*text-align: right !important;*/
 		font-size: 12px;
 	}
-	.information_subtitle::after {
+	.information_subtitle::after, .section_subtitle::after {
 		left: 81%;
 	}
 	.information_button{
