@@ -371,10 +371,8 @@ p{
 	color: #11100e;
 	margin: 0 auto;
 	width: 70%;
-	padding: 3em;
-}
-.introducing_text , .introducing_number , .button , .cipher_text{
-	margin: 20px 0 20px 0;
+	text-align: center;
+	padding-bottom: 5%;
 }
 label {
 	display: inline-block;
@@ -398,17 +396,18 @@ textarea{
 	vertical-align: top;
 	height: 5em;
 	resize: vertical;
-	width: 70%;
+	width: 100%;
 	color: black;
 	background-color: #dbd5f2;
 	border: none;
 }
-.button {
-    margin-left: 31%;
+#buttonEncode, #buttonDecode, #buttonCopyText{
+	width: 150px;
+	height: 50px;
 }
-button {
-	width: 90px;
-	margin: 0 50px 0 50px;
+.introducing_text, .introducing_number, .cipher_text{
+	text-align: left;
+	margin: 3% 0;
 }
 
 /*********************************
