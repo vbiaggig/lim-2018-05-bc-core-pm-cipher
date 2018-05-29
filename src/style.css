@@ -197,15 +197,13 @@ header{
 *********************************/
 .cipher_information
 {
-	padding-top: 110px;
-	padding-bottom: 110px;
+	padding: 6% 0;
 	background: #f5f9fa;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
-	margin-right:-15px;
-	margin-left:-15px;
+	margin: 86px -15px;
 }
 .col-2{
 	position:relative;
@@ -273,8 +271,8 @@ header{
 *********************************/
 
 .cipher_steps{
-	padding-top: 110px;
-	padding-bottom: 110px;
+	margin: 86px -15px;
+	padding: 6% 0;
 	background: #f5f9fa;
 }
 .section_title_container{
@@ -389,6 +387,7 @@ textarea{
 		font-size: 40px;
 	}
 	.cipher_information, .cipher_steps{
+		margin-top: 86px;
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
@@ -455,16 +454,13 @@ textarea{
 	.information_subtitle::after{
 		left: 84%;
 	}
-	.container{
-		max-width: 540px;
-		padding-top: 6%;
-	}
 	.cipher_information, .cipher_steps{
 		padding: 6% 0;
-		display: inline;
-		position: relative;
+		display: inline-block;
+		margin-top: 86px;
 	}
 	.col-2{
+		
 		flex: 0;
 		max-width: 100%;
 		text-align: right !important;
@@ -555,6 +551,12 @@ textarea{
 	.section_title_container .information_subtitle::after{
 		left: 90%;
 	}
+	.cipher_information, .cipher_steps{
+		margin-top: 70px;
+	}
+	.cipher_steps{
+		padding-top: 0; 
+	}
 }
 
 
@@ -607,5 +609,8 @@ textarea{
 	}
 	.cipher_steps_title{
 		font-size: 23px;
+	}
+	.cipher_information, .cipher_steps{
+		margin-top: 77px;
 	}
 }
