@@ -37,7 +37,7 @@
             <div class="information_text">
               <p>Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta en te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el <strong>shift</strong> que usaste.</p>
             </div>
-            <div type="submit" class="information_button" id="button"><a href="#">CIFRA/DESCIFRA AQUI</a></div>
+            <div type="submit" class="button" id="button"><a href="#">CIFRA/DESCIFRA AQUI</a></div>
           </div>
         </div>
       </div>
@@ -47,9 +47,9 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <div class="section_title_container text-center">
-                  <div class="section_subtitle">echa un vistazo a nuestros</div>
-                  <div class="section_title">Sencillos pasos para cifrar/descifrar</div>
+                <div class="section_title_container">
+                  <div class="information_subtitle">echa un vistazo a nuestros</div>
+                  <div class="information_title"><h1> Pasos para cifrar / descifrar </h1></div>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
       
             </div>
           </div>
-        </div>
+      </div>
 
       <!-- CIPHER AREA -->
       <div class="father_container" id="cipher_area" style="display:none">
@@ -114,17 +114,20 @@
             <label for="number">Digite un numero para cifrado/descifrado:</label>
             <input type="number" id="shift" name="cipher_number" value="0" min="0"/>
           </div>
-          <div class="button">
-            <button class="col-2" type="submit" id="buttonEncode" ><img src="images/lock.png" alt="">Cifrar</button>
+          <div class="information_buttons">
+              <div type="submit" class="button" id="buttonEncode"><a href="#">Cifrar</a></div>
+              <div type="submit" class="button" id="buttonDecode"><a href="#">Descifrar</a></div>
+            <!--<button class="col-2" type="submit" id="buttonEncode" ><img src="images/lock.png" alt="">Cifrar</button>
             <button class="col-2" type="submit" id="buttonDecode" ><img src="images/unlock.png" alt="">Descifrar</button>
-          </div>
+            --></div>
           <div class="cipher_text">
             <label for="msg">Texto descifrado/cifrado:</label>
             <textarea id="cipher_text" name="cipher_text" disabled></textarea>
           </div>
           <div class="copy_text">
-            <center> <button id="buttonCopyText"><img src="images/papers.png" alt="">copiar texto</button> </center>
-          </div>
+              <div type="submit" class="button" id="buttonCopyText"><a href="#">Copiar Texto</a></div>
+            <!--<center> <button id="buttonCopyText"><img src="images/papers.png" alt="">copiar texto</button> </center>
+            --></div>
         </div>
       </div>
 

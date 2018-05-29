@@ -103,6 +103,63 @@ p{
 	margin-right: auto;
 	margin-left: auto;
 }
+.button{
+	margin-top: 39px;
+}
+.button{
+	width: 180px;
+	height: 65px;
+	background: #85c1e9;
+	text-align: center;
+}
+.button a{
+	display: block;
+	position: relative;
+	line-height: 65px;
+	font-family: 'gill', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	z-index: 1;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.button a::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+	content: '';
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	z-index: -1;
+}
+.button:hover a::after
+{
+	width: 100%;
+	opacity: 1;
+}
+.button:hover a
+{
+	color: #85c1e9;
+}
 
 /*********************************
 3. Header
@@ -175,8 +232,7 @@ p{
 	flex:0 0 50%;
 	max-width:50%;
 }
-.information_image
-{
+.information_image{
 	max-width: 83%;
 	/*height: 394px;*/
 	margin-right: 66px;
@@ -184,22 +240,18 @@ p{
 	text-align:center!important;
 	margin-left: 18%;
 }
-.information_image2
-{
+.information_image2{
 	display: none;
 }
-.information_image img
-{
+.information_image img{
 	max-width: 83%;
 }
-.information_title
-{
+.information_title, .section_title_container{
 	font-family: 'gill', sans-serif;
 	color: #212121;
 	margin-top: -1px;
 }
-.information_subtitle
-{
+.information_subtitle{
 	font-family: 'gill', sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -208,8 +260,7 @@ p{
 	padding-left: 6px;
 	padding-top: 30px;
 }
-.information_subtitle::after
-{
+.information_subtitle::after{
 	display: block;
 	position: absolute;
 	top: 0;
@@ -219,78 +270,17 @@ p{
 	background: #85c1e9;
 	content: '';
 }
-.information_text
-{
+.information_text{
 	margin: 32px 2% 0 0;
 }
-.information_text p:last-of-type
-{
+.information_text p:last-of-type{
 	margin-bottom: 0;
-}
-.information_button
-{
-	margin-top: 39px;
-}
-.information_button
-{
-	width: 180px;
-	height: 65px;
-	background: #85c1e9;
-	text-align: center;
-}
-.information_button a
-{
-	display: block;
-	position: relative;
-	line-height: 59px;
-	font-family: 'gill', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	z-index: 1;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-.information_button a::after
-{
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	width: 50%;
-	height: 100%;
-	background: #FFFFFF;
-	content: '';
-	opacity: 0;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-	z-index: -1;
-}
-.information_button:hover a::after
-{
-	width: 100%;
-	opacity: 1;
-}
-.information_button:hover a
-{
-	color: #85c1e9;
 }
 
 /*********************************
 5 CIPHER STEPS
 *********************************/
+
 .cipher_steps{
 	padding-top: 110px;
 	padding-bottom: 110px;
@@ -298,35 +288,16 @@ p{
 }
 .section_title_container{
 	width: 100%;
+	text-align: center;
 }
-.section_title{
-	font-family: 'gill', sans-serif;
-	font-size: 40px;
-	color: #212121;
-	margin-top: -7px;
-}
-.section_subtitle{
-	position: relative;
-	font-family: 'gill', sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-	color: #a5a5a5;
-	padding-top: 30px;
-}
-.section_subtitle::after{
+.section_title_container .information_subtitle::after{
 	display: block;
 	position: absolute;
 	top: 0;
 	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	width: 68px;
 	height: 3px;
-	background: #85c1e9;
 	content: '';
 }
 .cipher_steps_row{
@@ -356,6 +327,7 @@ p{
 /*********************************
 6 CIPHER AREA
 *********************************/
+
 .father_container{
 	background-color: #f5f9fa;
 	color: #11100e;
@@ -392,12 +364,16 @@ textarea{
 	border: none;
 }
 #buttonEncode, #buttonDecode, #buttonCopyText{
-	width: 150px;
-	height: 50px;
+	display: inline-block !important;
+	text-align: center !important;
 }
 .introducing_text, .introducing_number, .cipher_text{
 	text-align: left;
 	margin: 3% 0;
+}
+.information_buttons{
+	display: inline-block !important;
+	text-align: center !important;
 }
 
 /*********************************
@@ -449,68 +425,21 @@ textarea{
 @media only screen and (max-width: 576px)
 {
 	p{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	h1, .section_title{
 		font-size: 28px;
 	}
 	.logo{
-		padding-left: 46px;
+		text-align: center;
+		padding-left: 0; 
 	}
 	.logo_line_1{
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.link_button{
-		width: 120px;
+		width: 180px;
 		height: 40px;
-	}
-	.information_button a{
-		font-size: 10px;
-		line-height: 40px;
-	}
-	.information_image{
-		margin-right: 0;
-	}
-	.information_subtitle, .section_subtitle{
-		font-size: 10px;
-		padding-left: 1px;
-	}
-	.information_subtitle::after, .section_subtitle{
-		left: 2px;
-	}
-	.container{
-		max-width: 540px;
-	}
-}
-
-/*********************************
-7.2. 480px
-*********************************/
-
-@media only screen and (max-width: 480px){
-	html, #root{
-		height: 480px;
-	}
-	.logo_line_1{
-		font-size: 24px;
-	}
-	.top_bar{
-		height: 70px;
-	}
-	.cipher_information, .cipher_steps{
-		padding: 6% 0;
-		display: inline;
-		position: relative;
-	}
-	.container{
-		padding-top: 6%;
-	}
-	.col-2{
-		flex: 0;
-		max-width: 100%;
-	}
-	.col{
-		text-align: right !important;
 	}
 	.information_image{
 		display: none;
@@ -519,34 +448,113 @@ textarea{
 		display: inline-block;
 		margin: 5px;
 		width: 12%;
+		height: 70px;
+	}
+	.information_image2 img{
+		width: 70px;
+		height: 70px;
+	}
+	.button a{
+		font-size: 13px;
+		line-height: 65px;
+	}
+	.information_title_container, .section_title_container{
+		display: inline-block;
+		width: 82%;
+	}
+	.information_subtitle{
+		font-size: 13px;
+		padding-left: 1px;
+		text-align: right !important;
+	}
+	.information_subtitle::after{
+		left: 84%;
+	}
+	.container{
+		max-width: 540px;
+		padding-top: 6%;
+	}
+	.cipher_information, .cipher_steps{
+		padding: 6% 0;
+		display: inline;
+		position: relative;
+	}
+	.col-2{
+		flex: 0;
+		max-width: 100%;
+		text-align: right !important;
+	}
+	.button{	
+		margin-left: 15%;
+		width: 70%;
+		font-size: 14px;
+	}
+	.col{
+		text-align: right !important;
+	}
+	.cipher_steps_row {
+
+		margin-top: 70px;
+		display: block;
+	}
+	.col-4{
+		max-width: 100%;
+		margin-top: 7%;
+	}
+	.father_container{
+		margin: 8% auto;
+	}
+	.button{
+		height: 50px;
+	}
+	.button a{
+		line-height: 50px;
+	}
+	.information_buttons{
+		width: 100%;
+	}
+	#buttonEncode, #buttonDecode, #buttonCopyText{
+		width: 30%;
+		margin: 0;
+		font-size: 14px;
+	}
+	.copy_text{
+		text-align: center;
+	}
+	.section_title_container{
+		text-align: right;
+	}
+	.section_title_container .information_subtitle::after{
+		left: 92%;
+	}
+}
+
+/*********************************
+7.2. 480px
+*********************************/
+
+@media only screen and (max-width: 480px){
+	.logo_line_1{
+		font-size: 24px;
+	}
+	.top_bar{
+		height: 70px;
+	}
+	.container{
+		padding-top: 6%;
+	}
+	.information_subtitle::after{
+		left: 81%;
+	}
+	.information_image2{
 		height: 56px;
 	}
 	.information_image2 img{
 		width: 56px;
 		height: 56px;
 	}
-	.information_title_container, .section_title_container{
-		display: inline-block;
-		width: 82%;
-	}
-	/*.section_title{
-		text-align: right !important;
-	}*/
-	.information_subtitle, .section_subtitle{
-		/*text-align: right !important;*/
-		font-size: 12px;
-	}
-	.information_subtitle::after, .section_subtitle::after {
-		left: 81%;
-	}
-	.information_button{
-		height: 40px;
-		margin-left: 50px;
-		width: 71%;
-		font-size: 14px;
-	}
-	p{
-		font-size: 14px;
+	.section_title_container .information_subtitle::after{
+		left: 90%;
 	}
 }
 
@@ -556,6 +564,12 @@ textarea{
 *********************************/
 
 @media only screen and (max-width: 320px){
+	body{
+		font-size: 12px;
+	}
+	p, .information_subtitle{
+		font-size: 12px;
+	}
 	.logo{
 		padding: 0%;
 		text-align: center;
@@ -565,5 +579,22 @@ textarea{
 	}
 	.top_bar{
 		height: 77px;
+	}
+	.button{
+		height: 35px;
+		
+	}
+	.button a{
+		line-height: 35px;
+		font-size: 9px;
+	}
+	#buttonCopyText{
+		width: 50%;
+	}
+	.information_subtitle::after{
+		left: 72%;
+	}
+	.section_title_container .information_subtitle::after{
+		left: 86%;
 	}
 }
