@@ -12,9 +12,9 @@ Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocid
 
 Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.
 
-##Información
+## Información
 
-###Contenido y Características
+### Contenido y Características
 
 *Información
 *Pasos para usar la aplicación
