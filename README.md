@@ -6,11 +6,39 @@ Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocid
 
 ## DEMO 
 
-![Sin titulo](demo.gif)
+![Demo](demo.gif)
 
 ## Preámbulo
 
 Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.
+
+### Desarrollo del producto
+
+Para desarrollar el producto inicié haciendo un mockup base para presentar al usuario en la entrevista.
+
+![mockup-base](mockup/mockup_base.png)
+
+Luego realicé entrevistas a diferentes usuarios para poder llegar a una conclusión de como podría ser el producto.
+
+*Para poder ver las entrevistas necesitas clonar el repositorio. El documento "Entrevista a usuarios" se encuentra dentro de la carpeta "Entrevistas"*
+
+Despues llegué a una conclusión.
+
+![mockup-base](mockup/mockup_oficial.png)
+
+Para empezar a trabajar el producto comencé por la estructura básica del HTML con un estilo básico de CSS.
+
+La segunda parte de la elaboración del producto fue programar el funcionamiento y el objetivo del producto, en este caso cifrar y descifrar un texto y que el usuario indique el posicionamiento.
+
+La tercera parte y última fue mejorar el CSS en un nivel más avanzado.
+
+### Objetivos del producto
+
+Todos pueden usar este producto, ya que está diseñado para todo tipo de público. Está indicado en el mismo producto los pasos que se deben realizar para usar el cifrado o descifrado de lo que el usuario desee.
+
+El objetivo es que el usuario pueda cifrar o descifrar su mensaje sin ningún problema y con fácil entendimiento del producto, es por ello que el mismo producto tiene los pasos de como llevar a cabo su cometido.
+
+Es por eso que éste producto resolverá todos sus problemas.
 
 ## Información
 
