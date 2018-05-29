@@ -197,7 +197,7 @@ header{
 *********************************/
 .cipher_information
 {
-	padding: 6% 0;
+	padding: 6%;
 	background: #f5f9fa;
 	display:-ms-flexbox;
 	display:flex;
@@ -272,7 +272,7 @@ header{
 
 .cipher_steps{
 	margin: 86px -15px;
-	padding: 6% 0;
+	padding: 6%;
 	background: #f5f9fa;
 }
 .section_title_container{
@@ -455,7 +455,6 @@ textarea{
 		left: 84%;
 	}
 	.cipher_information, .cipher_steps{
-		padding: 6% 0;
 		display: inline-block;
 		margin-top: 86px;
 	}

@@ -1,13 +1,34 @@
-﻿# Caesar Cipher
+﻿# Caesar Cipher APP
+
+## Introducción
 
 Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocidos, "CIFRADO CESAR". Estos mensajes no son entendibles a simple vista para ello, esta aplicación también te ayuda a descifrar los mensajes.
 
+## DEMO 
+
+![Sin titulo](demo.gif)
 
 ## Preámbulo
 
 Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.
 
-## Introducción
+##Información
+
+###Contenido y Características
+
+*Información
+*Pasos para usar la aplicación
+*Cifrador / Descifrador
+
+## Instalación
+
+Entra a la aplicación web aquí -> <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/>
+
+## Tecnologías usadas
+
+La aplicación está estructurada utilizando html, css,javascript.
+
+## Cifrado Cesar
 
 El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los
 primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por
@@ -30,23 +51,3 @@ con facilidad y en la práctica no ofrece mucha seguridad en la comunicación,
 pero el cifrado César muchas veces puede formar parte de sistemas más complejos
 de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el
 sistema ROT13.
-
-## DEMO 
-
-![Sin titulo](demo.gif)
-
-## Ejemplo de código
-
-> 
-  window.cipher = {
-       encode: (string, offset) => {
-       },
-       decode: (string, offset) => {
-       }
-  }
-    
-
-
-## APP
-
-Puedes entrar a la app <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/>
