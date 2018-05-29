@@ -16,9 +16,9 @@ Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram
 
 ### Contenido y Características
 
-*Información
-*Pasos para usar la aplicación
-*Cifrador / Descifrador
+* Información
+* Pasos para usar la aplicación
+* Cifrador / Descifrador
 
 ## Instalación
 
