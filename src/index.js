@@ -6,6 +6,7 @@ document.getElementById("button").addEventListener("click", () => {
 
 document.getElementById("principal").addEventListener("click", () => {
     document.getElementById("cipher_area").style.display = "none";
+    document.getElementById("cipher_steps").style.display = "none";
     document.getElementById("cipher_information").style.display = "";
 });
 
