@@ -38,7 +38,7 @@ body{
 	font-family: 'Amatic SC', cursive;
 	font-size: 14px;
 	font-weight: 400;
-	background: #f5f9fa;
+	background: #fffea1;
 	color: #494646;
 }
 div{
@@ -98,7 +98,7 @@ p{
 .button{
 	width: 180px;
 	height: 65px;
-	background: #85c1e9;
+	background: #f3e927;
 	text-align: center;
 	cursor:pointer; 
 	cursor: hand;
@@ -166,7 +166,7 @@ header{
 *********************************/
 
 .top_bar{
-    background: #11100e;
+    background: #4a819b;
     width: 100%;
 	height: 86px;
 }
@@ -188,7 +188,7 @@ header{
 	cursor: hand;
 }
 .logo_line_1 span{
-	color:  #85c1e9;
+	color:  #f3e927;
 	font-weight: bold;
 }
 
@@ -198,7 +198,7 @@ header{
 .cipher_information
 {
 	padding: 6%;
-	background: #f5f9fa;
+	background: #fffea1;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
@@ -252,7 +252,7 @@ header{
 	left: 5px;
 	width: 68px;
 	height: 3px;
-	background: #85c1e9;
+	background: #f3e927;
 	content: '';
 }
 .information_text{
@@ -273,7 +273,7 @@ header{
 .cipher_steps{
 	margin: 86px -15px;
 	padding: 6%;
-	background: #f5f9fa;
+	background: #fffea1;
 }
 .section_title_container{
 	width: 100%;
@@ -319,7 +319,7 @@ header{
 *********************************/
 
 .father_container{
-	background-color: #f5f9fa;
+	background-color: #fffea1;
 	color: #11100e;
 	margin: 0 auto;
 	width: 70%;
@@ -335,7 +335,7 @@ input, textarea {
     font: 1em;
     box-sizing: border-box;
 	color: #ffffff;
-	background-color: #4d4b4b;
+	background-color: #4a819b;
 	border: none;
 	border-radius: 5px;
 	display: block;
