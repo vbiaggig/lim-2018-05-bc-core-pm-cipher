@@ -457,6 +457,7 @@ textarea{
 	.cipher_information, .cipher_steps{
 		display: inline-block;
 		margin-top: 86px;
+		padding-top: 3%;
 	}
 	.col-2{
 		
@@ -534,9 +535,6 @@ textarea{
 	.top_bar{
 		height: 70px;
 	}
-	.container{
-		padding-top: 6%;
-	}
 	.information_subtitle::after{
 		left: 81%;
 	}
@@ -552,9 +550,6 @@ textarea{
 	}
 	.cipher_information, .cipher_steps{
 		margin-top: 70px;
-	}
-	.cipher_steps{
-		padding-top: 0; 
 	}
 }
 
