@@ -38,7 +38,7 @@ body{
 	font-family: 'Amatic SC', cursive;
 	font-size: 14px;
 	font-weight: 400;
-	background: #fffea1;
+	background: #fefdb9;
 	color: #494646;
 }
 div{
@@ -74,8 +74,7 @@ p{
 	position:relative;
     width:100%;
     min-height:1px;
-    padding-right:15px;
-	padding-left:15px;
+	padding: auto 15px;
 }
 .col-4{
 	-ms-flex:0 0 25%;
@@ -143,7 +142,7 @@ p{
 }
 .button:hover a
 {
-	color: #85c1e9;
+	color: #4a819b;
 	border-radius: 5px;
 }
 
@@ -198,7 +197,7 @@ header{
 .cipher_information
 {
 	padding: 6%;
-	background: #fffea1;
+	background: #fefdb9;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
@@ -271,9 +270,8 @@ header{
 *********************************/
 
 .cipher_steps{
-	margin: 86px -15px;
-	padding: 6%;
-	background: #fffea1;
+	margin: 0 -15px 6% -15px;
+	background: #fefdb9;
 }
 .section_title_container{
 	width: 100%;
@@ -309,6 +307,7 @@ header{
 .cipher_steps_text{
 	margin-top: 32px;
 	font-size: 20px;
+	padding: 0 5%;
 }
 .cipher_steps_text p:last-of-type{
 	margin-bottom: 0;
@@ -319,12 +318,14 @@ header{
 *********************************/
 
 .father_container{
-	background-color: #fffea1;
+	background-color: #fefdb9;
 	color: #11100e;
-	margin: 0 auto;
 	width: 70%;
 	text-align: center;
-	padding-bottom: 5%;
+	margin: 86px auto;
+	padding: 6%;
+	padding-bottom: 0;
+	margin-bottom: 2%;
 }
 label {
 	display: inline-block;
@@ -354,7 +355,7 @@ textarea{
 	resize: vertical;
 	width: 100%;
 }
-#buttonEncode, #buttonDecode, #buttonCopyText{
+#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
 	display: inline-block !important;
 	text-align: center !important;
 }
@@ -363,9 +364,21 @@ textarea{
 	margin: 3% 0;
 	font-size: 20px;
 }
-.information_buttons{
+.information_buttons, .steps_buttons{
 	display: inline-block !important;
 	text-align: center !important;
+}
+#intruction{
+	text-align: center !important;
+}
+.steps_buttons{
+	margin-top: 10%;
+}
+#buttonOpenSteps, #buttonCloseSteps{
+	background-color: #4a819b;
+}
+#buttonOpenSteps:hover a, #buttonCloseSteps:hover a{
+	color: #f3e927;
 }
 
 /*********************************
@@ -386,10 +399,15 @@ textarea{
 	{
 		font-size: 40px;
 	}
-	.cipher_information, .cipher_steps{
+	.cipher_information, .cipher_information{
 		margin-top: 86px;
 		padding-top: 70px;
 		padding-bottom: 70px;
+	}
+	.cipher_steps{
+		margin-top: 5%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.information_subtitle, .cipher_steps_text, .introducing_text, textarea, #shift, .button, .cipher_text{
 		font-size: 18px;
@@ -454,10 +472,15 @@ textarea{
 	.information_subtitle::after{
 		left: 84%;
 	}
-	.cipher_information, .cipher_steps{
+	.cipher_information{
 		display: inline-block;
 		margin-top: 86px;
 		padding-top: 3%;
+	}
+	.cipher_steps{
+		display: inline-block;
+		padding: 0 6%;
+		margin-top: 0;
 	}
 	.col-2{
 		
@@ -483,7 +506,12 @@ textarea{
 		margin-top: 7%;
 	}
 	.father_container{
+		display: inline-block;
 		margin: 15% auto;
+		width: 100%;
+		padding: 6% auto;
+		padding-bottom: 0;
+		margin-bottom: 6%;
 	}
 	.button{
 		height: 50px;
@@ -492,11 +520,11 @@ textarea{
 		line-height: 50px;
 		font-size: 20px;
 	}
-	.information_buttons{
+	.information_buttons, .steps_buttons{
 		width: 100%;
 	}
-	#buttonEncode, #buttonDecode, #buttonCopyText{
-		width: 30%;
+	#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
+		width: 32%;
 		margin: 0;
 		font-size: 14px;
 	}
@@ -529,6 +557,9 @@ textarea{
 *********************************/
 
 @media only screen and (max-width: 480px){
+	#buttonOpenSteps, #buttonCloseSteps{
+		width: 40%;
+	}
 	.logo_line_1{
 		font-size: 30px;
 	}
@@ -548,7 +579,7 @@ textarea{
 	.section_title_container .information_subtitle::after{
 		left: 90%;
 	}
-	.cipher_information, .cipher_steps{
+	.cipher_information, .father_container{
 		margin-top: 70px;
 	}
 }
@@ -604,7 +635,7 @@ textarea{
 	.cipher_steps_title{
 		font-size: 23px;
 	}
-	.cipher_information, .cipher_steps{
+	.cipher_information, .father_container{
 		margin-top: 77px;
 	}
 }

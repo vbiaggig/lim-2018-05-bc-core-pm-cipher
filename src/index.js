@@ -1,7 +1,6 @@
 document.getElementById("button").addEventListener("click", () => {
     document.getElementById("cipher_area").style.display = "";
     document.getElementById("cipher_information").style.display = "none";
-    document.getElementById("cipher_steps").style.display = "";
 });
 
 document.getElementById("principal").addEventListener("click", () => {
@@ -18,6 +17,13 @@ document.getElementById("buttonCopyText").addEventListener("click", ()=>{
     document.execCommand("copy");
     document.body.removeChild(aux);
 })
+
+document.getElementById("buttonOpenSteps").addEventListener("click", () => {
+    document.getElementById("cipher_steps").style.display = "";
+});
+document.getElementById("buttonCloseSteps").addEventListener("click", () => {
+    document.getElementById("cipher_steps").style.display = "none";
+});
 
 document.getElementById("buttonEncode").addEventListener("click", ()=>{
     const cipher_message = document.getElementById("cipher_message").value;
