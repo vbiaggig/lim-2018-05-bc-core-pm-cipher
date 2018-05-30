@@ -507,7 +507,7 @@ textarea{
 	}
 	.father_container{
 		display: inline-block;
-		margin: 15% auto;
+		margin-top: 15% auto;
 		width: 100%;
 		padding: 6% auto;
 		padding-bottom: 0;
@@ -637,5 +637,9 @@ textarea{
 	}
 	.cipher_information, .father_container{
 		margin-top: 77px;
+	}
+	.col{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
