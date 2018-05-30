@@ -20,7 +20,13 @@ document.getElementById("buttonCopyText").addEventListener("click", ()=>{
 
 document.getElementById("buttonOpenSteps").addEventListener("click", () => {
     document.getElementById("cipher_steps").style.display = "";
+    var elmnt = document.getElementById("cipher_steps");
+    elmnt.scrollIntoView();
+    //window.scroll(0,1200);
 });
+/*document.getElementById("buttonOpenSteps").addEventListener("click", () => {
+    document.getElementById("cipher_steps").style.display = "";
+});*/
 document.getElementById("buttonCloseSteps").addEventListener("click", () => {
     document.getElementById("cipher_steps").style.display = "none";
 });

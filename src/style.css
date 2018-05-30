@@ -21,7 +21,7 @@
 /***********
 1. Fonts
 ***********/
-@import url('https://fonts.googleapis.com/css?family=Exo|Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Exo|Amatic+SC|Dosis');
 
 /*********************************
 2. Body and some general stuff
@@ -35,7 +35,7 @@
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 body{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	background: #fefdb9;
@@ -97,7 +97,7 @@ p{
 .button{
 	width: 180px;
 	height: 65px;
-	background: #f3e927;
+	background: #c3bb16;
 	text-align: center;
 	cursor:pointer; 
 	cursor: hand;
@@ -187,7 +187,7 @@ header{
 	cursor: hand;
 }
 .logo_line_1 span{
-	color:  #f3e927;
+	color:  #c3bb16;
 	font-weight: bold;
 }
 
@@ -237,7 +237,7 @@ header{
 }
 .information_subtitle{
 	font-family: 'Amatic SC', cursive;
-	font-size: 20px;
+	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	color: #a5a5a5;
@@ -251,12 +251,12 @@ header{
 	left: 5px;
 	width: 68px;
 	height: 3px;
-	background: #f3e927;
+	background: #c3bb16;
 	content: '';
 }
 .information_text{
 	margin: 32px 2% 0 0;
-	font-size: 20px;
+	font-size: 25px;
 }
 .information_text p:last-of-type{
 	margin-bottom: 0;
@@ -289,6 +289,8 @@ header{
 }
 .cipher_steps_row{
 	margin-top: 79px;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 .cipher_steps_image{
 	width: 70px;
@@ -306,11 +308,16 @@ header{
 }
 .cipher_steps_text{
 	margin-top: 32px;
-	font-size: 20px;
+	font-size: 23px;
 	padding: 0 5%;
 }
 .cipher_steps_text p:last-of-type{
 	margin-bottom: 0;
+}
+.cipher_steps .steps_buttons{
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
 }
 
 /*********************************
@@ -378,8 +385,9 @@ textarea{
 	background-color: #4a819b;
 }
 #buttonOpenSteps:hover a, #buttonCloseSteps:hover a{
-	color: #f3e927;
+	color: #c3bb16;
 }
+
 
 /*********************************
 7. Responsive
