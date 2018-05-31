@@ -9,12 +9,13 @@
 3. Header
 	3.1 Top bar
 4. CIPHER INFORMATION
-5. CIPHER STEPS
-6. CIPHER AREA
+5. CIPHER AREA
+6. CIPHER STEPS
 7. Responsive
-	7.1.
-	7.2.
-	7.3.
+	7.1. 768px
+	7.2. 576px
+	7.3. 480px
+	7.4. 320px
 
 ******************************/
 
@@ -26,7 +27,6 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
-
 *{
 	margin: 0;
 	padding: 0;
@@ -149,7 +149,6 @@ p{
 /*********************************
 3. Header
 *********************************/
-
 header{
 	position: fixed;
 	top: 0;
@@ -163,7 +162,6 @@ header{
 /*********************************
 3.1 Top bar
 *********************************/
-
 .top_bar{
     background: #4a819b;
     width: 100%;
@@ -227,15 +225,15 @@ header{
 .information_image img{
 	max-width: 83%;
 }
-.information_title, .section_title_container{
+.title, .section_title_container{
 	font-family: 'Amatic SC', cursive;
 	color: #212121;
 	margin-top: -1px;
 }
-.information_title{
+.title{
 	font-size: 50px;
 }
-.information_subtitle{
+.subtitle{
 	font-family: 'Amatic SC', cursive;
 	font-size: 25px;
 	text-transform: uppercase;
@@ -244,7 +242,7 @@ header{
 	padding-left: 6px;
 	padding-top: 30px;
 }
-.information_subtitle::after{
+.subtitle::after{
 	display: block;
 	position: absolute;
 	top: 0;
@@ -266,62 +264,7 @@ header{
 }
 
 /*********************************
-5 CIPHER STEPS
-*********************************/
-
-.cipher_steps{
-	margin: 0 -15px 6% -15px;
-	background: #fefdb9;
-}
-.section_title_container{
-	width: 100%;
-	text-align: center;
-}
-.section_title_container .information_subtitle::after{
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 68px;
-	height: 3px;
-	content: '';
-}
-.cipher_steps_row{
-	margin-top: 79px;
-	padding-left: 6%;
-	padding-right: 6%;
-}
-.cipher_steps_image{
-	width: 70px;
-	height: 70px;
-	margin: 0 auto;
-}
-.cipher_steps_image img{
-	max-width: 100%;
-}
-.cipher_steps_title{
-	font-family: 'Amatic SC', cursive;
-	font-size: 35px;
-	color: #212121;
-	margin-top: 11px;
-}
-.cipher_steps_text{
-	margin-top: 32px;
-	font-size: 23px;
-	padding: 0 5%;
-}
-.cipher_steps_text p:last-of-type{
-	margin-bottom: 0;
-}
-.cipher_steps .steps_buttons{
-	width: 100%;
-	text-align: center;
-	margin-top: 2%;
-}
-
-/*********************************
-6 CIPHER AREA
+5 CIPHER AREA
 *********************************/
 
 .father_container{
@@ -388,6 +331,60 @@ textarea{
 	color: #c3bb16;
 }
 
+/*********************************
+5 CIPHER STEPS
+*********************************/
+.cipher_steps{
+	margin: 0 -15px 6% -15px;
+	background: #fefdb9;
+}
+.section_title_container{
+	width: 100%;
+	text-align: center;
+}
+.section_title_container .subtitle::after{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 68px;
+	height: 3px;
+	content: '';
+}
+.cipher_steps_row{
+	margin-top: 79px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.cipher_steps_image{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+.cipher_steps_image img{
+	max-width: 100%;
+}
+.cipher_steps_title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 35px;
+	color: #212121;
+	margin-top: 11px;
+}
+.cipher_steps_text{
+	margin-top: 32px;
+	font-size: 23px;
+	padding: 0 5%;
+}
+.cipher_steps_text p:last-of-type{
+	margin-bottom: 0;
+}
+.cipher_steps .steps_buttons{
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
+
 
 /*********************************
 7. Responsive
@@ -396,7 +393,6 @@ textarea{
 /*********************************
 7.1. 768px
 *********************************/
-
 @media only screen and (max-width: 768px)
 {
 	.logo
@@ -417,21 +413,29 @@ textarea{
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.information_subtitle, .cipher_steps_text, .introducing_text, textarea, #shift, .button, .cipher_text{
-		font-size: 18px;
+	.cipher_steps_text{
+		padding: 0 10%;
 	}
-	.information_title{
+	.cipher_steps_text, .introducing_text, textarea, #shift, .button, .cipher_text{
+		font-size: 16px;
+	}
+	.subtitle{
+		font-size: 22px;
+	}
+	.title{
 		font-size: 40px;
 	}
 	.cipher_steps_title{
 		font-size: 25px;
+	}
+	.information_text{
+		font-size: 18px;
 	}
 }
 
 /*********************************
 7.2. 576px
 *********************************/
-
 @media only screen and (max-width: 576px)
 {
 	p{
@@ -468,16 +472,16 @@ textarea{
 		font-size: 13px;
 		line-height: 65px;
 	}
-	.information_title_container, .section_title_container{
+	.title_container, .section_title_container{
 		display: inline-block;
 		width: 82%;
 	}
-	.information_subtitle{
+	.subtitle{
 		font-size: 13px;
 		padding-left: 1px;
 		text-align: right !important;
 	}
-	.information_subtitle::after{
+	.subtitle::after{
 		left: 84%;
 	}
 	.cipher_information{
@@ -542,7 +546,7 @@ textarea{
 	.section_title_container{
 		text-align: right;
 	}
-	.section_title_container .information_subtitle::after{
+	.section_title_container .subtitle::after{
 		left: 92%;
 	}
 	textarea, #shift{
@@ -563,7 +567,6 @@ textarea{
 /*********************************
 7.2. 480px
 *********************************/
-
 @media only screen and (max-width: 480px){
 	#buttonOpenSteps, #buttonCloseSteps{
 		width: 40%;
@@ -574,7 +577,7 @@ textarea{
 	.top_bar{
 		height: 70px;
 	}
-	.information_subtitle::after{
+	.subtitle::after{
 		left: 81%;
 	}
 	.information_image2{
@@ -584,7 +587,7 @@ textarea{
 		width: 56px;
 		height: 56px;
 	}
-	.section_title_container .information_subtitle::after{
+	.section_title_container .subtitle::after{
 		left: 90%;
 	}
 	.cipher_information, .father_container{
@@ -596,15 +599,14 @@ textarea{
 /*********************************
 7.2. 320px
 *********************************/
-
 @media only screen and (max-width: 320px){
 	body{
 		font-size: 12px;
 	}
-	.information_title {
+	.title {
 		font-size: 30px;
 	}
-	p, .information_subtitle{
+	p, .subtitle{
 		font-size: 14px;
 	}
 	.logo{
@@ -628,10 +630,10 @@ textarea{
 	#buttonCopyText{
 		width: 50%;
 	}
-	.information_subtitle::after{
+	.subtitle::after{
 		left: 72%;
 	}
-	.section_title_container .information_subtitle::after{
+	.section_title_container .subtitle::after{
 		left: 86%;
 	}
 	textarea, #shift{
