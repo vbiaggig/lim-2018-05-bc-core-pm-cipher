@@ -37,9 +37,9 @@
           <div class="information_image2">
             <img src="images/cipher.png" alt="">
           </div>
-          <div class="information_title_container">
-            <div class="information_subtitle">cifrado para tus mensajes secretos</div>
-            <h1 class="information_title">Caesar Cipher</h1>
+          <div class="title_container">
+            <div class="subtitle">cifrado para tus mensajes secretos</div>
+            <h1 class="title">Caesar Cipher</h1>
           </div>
           <div class="information_text">
             <p>Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra
@@ -54,88 +54,18 @@
       </div>
     </div>
 
-    <!-- CIPHER STEPS -->
-    <div class="cipher_steps" id="cipher_steps" style="display:none">
-      <div class="container">
+    <!-- CIPHER AREA -->
+    
+    <div class="father_container" id="cipher_area" style="display:none">
+      <div class="col">
         <div class="row">
           <div class="col">
             <div class="section_title_container">
-              <div class="information_subtitle">echa un vistazo a nuestros</div>
-              <h1 class="information_title">Pasos para cifrar / descifrar</h1>
+              <div class="subtitle">area de</div>
+              <h1 class="title">CIFRADO / DESCIFRADO</h1>
             </div>
           </div>
         </div>
-        <div class="row cipher_steps_row">
-
-          <!-- cipher steps Item -->
-          <div class="col col-4 cipher_steps_col">
-            <div class="cipher_steps_item text-center">
-              <div class="cipher_steps_image">
-                <img src="images/one.png" alt="">
-              </div>
-              <div class="cipher_steps_title">Introduce el
-                <strong>texto</strong>
-              </div>
-              <div class="cipher_steps_text">
-                <p>En el primer text area (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- cipher steps Item -->
-          <div class="col col-4 cipher_steps_col">
-            <div class="cipher_steps_item text-center">
-              <div class="cipher_steps_image">
-                <img src="images/two.png" alt="">
-              </div>
-              <div class="cipher_steps_title">Introduce el
-                <strong>shift</strong>
-              </div>
-              <div class="cipher_steps_text">
-                <p>En el input number (número de entrada) introduce un shift (número de cambio) para que tu cifrado empiece
-                  desde donde tú quieras, o en el caso de que quieras descifrar, coloca el digito que te han indicado.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- cipher steps Item -->
-          <div class="col col-4 cipher_steps_col">
-            <div class="cipher_steps_item text-center">
-              <div class="cipher_steps_image">
-                <img src="images/three.png" alt="">
-              </div>
-              <div class="cipher_steps_title">Dale
-                <strong>click</strong>
-              </div>
-              <div class="cipher_steps_text">
-                <p>Dale "click" en el botón cifrar, si deseas cifrar, o en el botón descifrar, si deseas descifrar el mensaje.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- cipher steps Item -->
-          <div class="col col-4 cipher_steps_col">
-            <div class="cipher_steps_item text-center">
-              <div class="cipher_steps_image">
-                <img src="images/four.png" alt="">
-              </div>
-              <div class="cipher_steps_title">Copia el
-                <strong>texto</strong>
-              </div>
-              <div class="cipher_steps_text">
-                <p>En el segundo text area te saldrá el texto cifrado/descifrado y si deseas copiarlo solo haz "click" en el
-                  botón que dice copiar texto y se guardará automáticamente en tu portapapeles.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- CIPHER AREA -->
-    <div class="father_container" id="cipher_area" style="display:none">
-      <div class="col">
         <div class="introducing_text">
           <label for="msg">Introduzca el texto que desea cifrar/descifrar:</label>
           <textarea id="cipher_message" name="cipher_message"></textarea>
@@ -151,9 +81,6 @@
           <div type="submit" class="button" id="buttonDecode">
             <a>Descifrar</a>
           </div>
-          <!--<button class="col-2" type="submit" id="buttonEncode" ><img src="images/lock.png" alt="">Cifrar</button>
-            <button class="col-2" type="submit" id="buttonDecode" ><img src="images/unlock.png" alt="">Descifrar</button>
-            -->
         </div>
         <div class="cipher_text">
           <label for="msg">Texto descifrado/cifrado:</label>
@@ -163,13 +90,101 @@
           <div type="submit" class="button" id="buttonCopyText">
             <a>Copiar Texto</a>
           </div>
-          <!--<center> <button id="buttonCopyText"><img src="images/papers.png" alt="">copiar texto</button> </center>
-            -->
         </div>
       </div>
+      <div class="steps_buttons">
+          <div type="submit" class="button" id="buttonOpenSteps" >
+            <a>Abrir instrucciones</a>
+          </div>
+        </div>
     </div>
 
-  </div>
+
+    <!-- CIPHER STEPS -->
+    <div class="cipher_steps" id="cipher_steps" style="display:none">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_title_container">
+              <div class="subtitle">echa un vistazo a nuestros</div>
+              <h1 class="title">Pasos para cifrar / descifrar</h1>
+            </div>
+          </div>
+        </div>
+  
+          <div class="row cipher_steps_row">
+  
+            <!-- cipher steps Item -->
+            <div class="col col-4 cipher_steps_col">
+              <div class="cipher_steps_item text-center">
+                <div class="cipher_steps_image">
+                  <img src="images/one.png" alt="">
+                </div>
+                <div class="cipher_steps_title">Introduce el
+                  <strong>texto</strong>
+                </div>
+                <div class="cipher_steps_text">
+                  <p>En el primer text area (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- cipher steps Item -->
+            <div class="col col-4 cipher_steps_col">
+              <div class="cipher_steps_item text-center">
+                <div class="cipher_steps_image">
+                  <img src="images/two.png" alt="">
+                </div>
+                <div class="cipher_steps_title">Introduce el
+                  <strong>shift</strong>
+                </div>
+                <div class="cipher_steps_text">
+                  <p>En el input number (número de entrada) introduce un shift (número de cambio) para que tu cifrado empiece
+                    desde donde tú quieras, o en el caso de que quieras descifrar, coloca el digito que te han indicado.</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- cipher steps Item -->
+            <div class="col col-4 cipher_steps_col">
+              <div class="cipher_steps_item text-center">
+                <div class="cipher_steps_image">
+                  <img src="images/three.png" alt="">
+                </div>
+                <div class="cipher_steps_title">Dale
+                  <strong>click</strong>
+                </div>
+                <div class="cipher_steps_text">
+                  <p>Dale "click" en el botón cifrar, si deseas cifrar, o en el botón descifrar, si deseas descifrar el mensaje.</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- cipher steps Item -->
+            <div class="col col-4 cipher_steps_col">
+              <div class="cipher_steps_item text-center">
+                <div class="cipher_steps_image">
+                  <img src="images/four.png" alt="">
+                </div>
+                <div class="cipher_steps_title">Copia el
+                  <strong>texto</strong>
+                </div>
+                <div class="cipher_steps_text">
+                  <p>En el segundo text area te saldrá el texto cifrado/descifrado y si deseas copiarlo solo haz "click" en el
+                    botón que dice copiar texto y se guardará automáticamente en tu portapapeles.</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="steps_buttons">
+            <div type="submit" class="button" id="buttonCloseSteps">
+              <a>Cerrar instrucciones</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>  
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>

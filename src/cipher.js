@@ -35,7 +35,14 @@ window.cipher = {
     return ciphertext;
   },  
   createCipherWithOffset: () => {
-     /* */
+    return cipher.createCipherWithOffset = {
+      encode: (offset) => {
+        return cipher.encode(offset,"abc");
+      },
+      decode: (offset) => {
+        return cipher.decode(offset,"hij");
+      }
+    }
   }
 };
   
