@@ -88,7 +88,7 @@ p{
 	margin-top: 39px;
 }
 .button{
-	width: 180px;
+	width: 220px;
 	height: 65px;
 	background: #c3bb16;
 	text-align: center;
@@ -217,6 +217,7 @@ header{
 }
 .informationImage img{
 	max-width: 83%;
+	height: 480px;
 }
 .title, .cipherTitleContainer{
 	font-family: 'Poor Story', cursive;
@@ -305,7 +306,7 @@ textarea{
 .introducingText, .introducingNumber, .cipherText{
 	text-align: left;
 	margin: 3% 0;
-	font-size: 20px;
+	font-size: 16px;
 }
 .buttonsContainer, .stepsButtons{
 	display: inline-block !important;
@@ -378,6 +379,7 @@ textarea{
 }
 .cipherStepsItem{
 	margin: 4%;
+	text-align: center;
 }
 
 
@@ -472,7 +474,7 @@ textarea{
 		width: 82%;
 	}
 	.subtitle{
-		font-size: 13px;
+		font-size: 18px;
 		padding-left: 1px;
 		text-align: right !important;
 	}
@@ -530,8 +532,13 @@ textarea{
 	.buttonsContainer, .stepsButtons{
 		width: 100%;
 	}
-	#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
+	#buttonEncode, #buttonDecode, #buttonCopyText{
 		width: 32%;
+		margin: 0;
+		font-size: 14px;
+	}
+	#buttonOpenSteps, #buttonCloseSteps{
+		width: 52%;
 		margin: 0;
 		font-size: 14px;
 	}
@@ -564,7 +571,7 @@ textarea{
 *********************************/
 @media only screen and (max-width: 480px){
 	#buttonOpenSteps, #buttonCloseSteps{
-		width: 40%;
+		width: 55%;
 	}
 	.logoLine1{
 		font-size: 30px;
