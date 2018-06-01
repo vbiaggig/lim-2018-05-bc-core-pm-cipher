@@ -1,11 +1,19 @@
+//objeto global window
 window.cipher = {
+  //metodo encode
   encode: (offset, string) => {
+    //convirtiendo offset a Interger
     offset = parseInt(offset);
+    //creando una variable string para almacenamiento de las letras cifradas
     let ciphertext = '';
+    //obteniendo el residuo del offset
     offset = offset % 26;
+    //bucle para almacenar las letras cifradas
     for(let i=0 ; i < string.length ; i++) {
+      //convirtiendo a ASCII
       let cAscii = string.charCodeAt(i);
       let letter;
+      //diviendo el cifrado por letras mayusculas, minusculas y cuando no sea letra, no cifrar
       if((cAscii >= 65) && (cAscii <= 90)){
         letter = (cAscii-65+offset)%26+65;
       }else if((cAscii >= 97) && (cAscii <= 122)){
@@ -13,16 +21,25 @@ window.cipher = {
       }else {
         letter = cAscii;
       }
-        ciphertext += String.fromCharCode(letter);
+      //almacenando las letras cifradas y convirtiendolas en string
+      ciphertext += String.fromCharCode(letter);
     }
     return ciphertext;
   },
+  //metodo decode
   decode: (offset, string) => {
+    //convirtiendo offset a Interger
+    offset = parseInt(offset);
+    //creando una variable string para almacenamiento de las letras cifradas
     let ciphertext = '';
+    //obteniendo el residuo del offset
     offset = offset % 26;
+    //bucle para almacenar las letras descifradas
     for(let i=0 ; i < string.length ; i++) {
+      //convirtiendo a ASCII
       let cAscii = string.charCodeAt(i);
       let letter;
+      //diviendo el descifrado por letras mayusculas, minusculas y cuando no sea letra, no descifrar
       if((cAscii >= 65) && (cAscii <= 90)){
         letter = (cAscii-65-offset+26)%26+65;
       }else if ((cAscii >= 97) && (cAscii <= 122)) {
@@ -30,17 +47,24 @@ window.cipher = {
       }else {
         letter=cAscii;
       }
+      //almacenando las letras descifradas y convirtiendolas en string
       ciphertext += String.fromCharCode(letter);
     }
     return ciphertext;
-  },  
+  },
+  //metodo createCipherWithOffset
   createCipherWithOffset: () => {
+    //retornando un objeto con dos metodos
     return cipher.createCipherWithOffset = {
+      //funcion encode
       encode: (offset) => {
-        return cipher.encode(offset,"abc");
+        //retornando cipher.encode con un string dado
+        return cipher.encode(offset,'abc');
       },
+      //funcion decode
       decode: (offset) => {
-        return cipher.decode(offset,"hij");
+        //retornando cipher.decode con un string dado
+        return cipher.decode(offset,'hij');
       }
     }
   }
