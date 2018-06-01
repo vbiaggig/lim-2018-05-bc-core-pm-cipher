@@ -53,18 +53,18 @@ window.cipher = {
     return ciphertext;
   },
   //metodo createCipherWithOffset
-  createCipherWithOffset: () => {
+  createCipherWithOffset: (offset) => {
     //retornando un objeto con dos metodos
-    return cipher.createCipherWithOffset = {
+    return {
       //funcion encode
-      encode: (offset) => {
+      encode: (string) => {
         //retornando cipher.encode con un string dado
-        return cipher.encode(offset,'abc');
+        return cipher.encode(offset,string);
       },
       //funcion decode
-      decode: (offset) => {
+      decode: (string) => {
         //retornando cipher.decode con un string dado
-        return cipher.decode(offset,'hij');
+        return cipher.decode(offset,string);
       }
     }
   }

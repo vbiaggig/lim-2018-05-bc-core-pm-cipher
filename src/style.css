@@ -22,7 +22,7 @@
 /***********
 1. Fonts
 ***********/
-@import url('https://fonts.googleapis.com/css?family=Exo|Amatic+SC|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Poor+Story');
 
 /*********************************
 2. Body and some general stuff
@@ -82,8 +82,7 @@ p{
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 8% auto;
 }
 .button{
 	margin-top: 39px;
@@ -101,7 +100,7 @@ p{
 	display: block;
 	position: relative;
 	line-height: 65px;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 20px;
 	font-weight: bold;
 	color: #FFFFFF;
@@ -168,7 +167,7 @@ header{
 	padding-left: 63px;
 }
 .logoLine1{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 40px;
 	line-height: 0.75;
 	letter-spacing: 0.02em;
@@ -220,7 +219,7 @@ header{
 	max-width: 83%;
 }
 .title, .cipherTitleContainer{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	color: #212121;
 	margin-top: -1px;
 }
@@ -228,7 +227,7 @@ header{
 	font-size: 50px;
 }
 .subtitle{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -360,7 +359,7 @@ textarea{
 	max-width: 100%;
 }
 .cipherStepsTitle{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 35px;
 	color: #212121;
 	margin-top: 11px;
