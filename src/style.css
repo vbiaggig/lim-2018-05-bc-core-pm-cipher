@@ -30,7 +30,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: #000000 0 0 1px;
 }
 body{
 	font-family: 'Dosis', sans-serif;
@@ -554,15 +554,21 @@ textarea{
 	textarea, #cipherNumber{
 		font-size: 11px;
 	}
-	.cipherStepsImage, .cipherStepsTitle{
-		display: inline-block;
-	}
 	.cipherStepsImage{
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 	}
 	.cipherStepsText p, .informationText p{
 		font-size: 20px;
+	}
+	.cipherStepsTitle{
+		margin-top: 2px;
+	}
+	.cipherStepsText{
+		margin-top: 8px;
+	}
+	.cipherStepsItem{
+		margin-top: 8%;
 	}
 }
 
@@ -571,7 +577,7 @@ textarea{
 *********************************/
 @media only screen and (max-width: 480px){
 	#buttonOpenSteps, #buttonCloseSteps{
-		width: 55%;
+		width: 59%;
 	}
 	.logoLine1{
 		font-size: 30px;
@@ -653,5 +659,8 @@ textarea{
 	.col{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	#buttonOpenSteps, #buttonCloseSteps{
+		width: 65%;
 	}
 }
