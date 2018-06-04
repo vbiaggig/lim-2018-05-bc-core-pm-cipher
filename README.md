@@ -1,22 +1,22 @@
-﻿# <h1 style='color:#2490F4'>Caesar Cipher APP</h1>
+﻿# Caesar Cipher APP
 
-## <h2 style='color:#68EEAD'>Introducción</h2>
+## Introducción
 
 Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocidos, "CIFRADO CESAR". Estos mensajes no son entendibles a simple vista para ello, esta aplicación también te ayuda a descifrar los mensajes.
 
-## <h2 style='color:#68EEAD'>DEMO</h2>
+## DEMO
 
 Entra a la aplicación web aquí -> <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/>
 
 ![Demo](readme/demo.gif)
 
-## <h2 style='color:#68EEAD'>Preámbulo</h2>
+## Preámbulo
 
 Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.
 
-## <h2 style='color:#68EEAD'>Producto</h2>
+## Producto
 
-### <h3 style='color:#98ED06'>Desarrollo del producto</h3>
+### Desarrollo del producto
 
 Para desarrollar el producto inicié haciendo un mockup base para presentar al usuario en la entrevista.
 
@@ -46,7 +46,7 @@ La tercera parte y última fue mejorar el CSS en un nivel más avanzado haciénd
 
 El hacker edition fue culminado con éxito luego de todo el desarrollo del producto.
 
-### <h3 style='color:#98ED06'>Objetivos del producto</h3>
+### Objetivos del producto
 
 Todos pueden usar este producto, ya que está diseñado para todo tipo de público alfabetizado; desde un menor de edad ,hasta un adulto mayor. Está indicado en el mismo producto los pasos que se deben realizar para usar correctamente el cifrado o descifrado de lo que el usuario desee.
 
@@ -54,23 +54,23 @@ El objetivo es que el usuario pueda cifrar o descifrar su mensaje sin ningún pr
 
 Es por eso que éste producto resolverá todos sus problemas en cuanto a mandar un mensaje secreto y hasta poder revelarlo.
 
-## <h2 style='color:#68EEAD'>Información</h2>
+## Información
 
-### <h3 style='color:#98ED06'>Contenido y Características</h3>
+### Contenido y Características
 
 * Información
 * Pasos para usar la aplicación
 * Cifrador / Descifrador
 
-## <h2 style='color:#68EEAD'>Instalación</h2>
+## Instalación
 
 Entra a la aplicación web aquí -> <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/>
 
-## <h2 style='color:#68EEAD'>Tecnologías usadas</h2>
+## Tecnologías usadas
 
 La aplicación está estructurada utilizando html, css,javascript.
 
-## <h2 style='color:#68EEAD'>Cifrado Cesar</h2>
+## Cifrado Cesar
 
 El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los
 primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por
