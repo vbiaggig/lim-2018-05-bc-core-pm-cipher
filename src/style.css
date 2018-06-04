@@ -207,17 +207,15 @@ header{
 }
 .informationImage{
 	max-width: 83%;
-	margin-right: 66px;
 	text-align:right!important;
 	text-align:center!important;
-	margin-left: 18%;
 }
 .informationImage2{
 	display: none;
 }
 .informationImage img{
-	max-width: 83%;
-	height: 480px;
+	width: 350px;
+	height: 400px;
 }
 .title, .cipherTitleContainer{
 	font-family: 'Poor Story', cursive;
@@ -427,6 +425,11 @@ textarea{
 	}
 	.informationText{
 		font-size: 18px;
+	}
+	.informationImage img{
+		width: 250px;
+		height: 300px;
+		margin-top: 30%;
 	}
 }
 
