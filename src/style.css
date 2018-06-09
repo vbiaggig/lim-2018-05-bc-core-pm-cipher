@@ -7,7 +7,8 @@
 1. Fonts
 2. Body and some general stuff
 3. Header
-	3.1 Top bar
+  3.1 Top bar
+  3.2 Main Menu
 4. CIPHER INFORMATION
 5. CIPHER AREA
 6. CIPHER STEPS
@@ -36,7 +37,7 @@ body{
 	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #fefdb9;
+	background: #f0f0f0;
 	color: #494646;
 }
 div{
@@ -66,14 +67,19 @@ p{
 }
 .col{
 	position:relative;
-    width:100%;
-    min-height:1px;
+  width:100%;
+  min-height:1px;
 	padding: auto 15px;
 }
 .col-4{
 	-ms-flex:0 0 25%;
 	flex:0 0 25%;
 	max-width:25%;
+}
+.col-3{
+  -ms-flex:0 0 33.33%;
+	flex:0 0 33.33%;
+	max-width: 33.33%;
 }
 .text-center{
 	text-align:center!important;
@@ -90,7 +96,7 @@ p{
 .button{
 	width: 220px;
 	height: 65px;
-	background: #c3bb16;
+	background: #99ed31;
 	text-align: center;
 	cursor:pointer; 
 	cursor: hand;
@@ -156,8 +162,8 @@ header{
 3.1 Top bar
 *********************************/
 .topBar{
-    background: #4a819b;
-    width: 100%;
+  background: #3b6072;
+  width: 100%;
 	height: 86px;
 }
 .logoContainer{
@@ -172,14 +178,57 @@ header{
 	line-height: 0.75;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-    color: #f5f9fa;
+  color: #f5f9fa;
 	padding-top: 15px;
 	cursor:pointer; 
 	cursor: hand;
 }
 .logoLine1 span{
-	color:  #c3bb16;
+	color:  #99ed31;
 	font-weight: bold;
+}
+
+/*********************************
+3.2 Main Menu
+*********************************/
+
+.navBar{
+  text-align: right;
+  width: 50%;
+  top: -40px;
+  left: 50%;
+  font-family: 'Poor Story', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.main_menu_list > li
+{
+	display: inline-block;
+	margin-right: 60px;
+  height: 100%;
+}
+.main_menu_list li
+{
+	position: relative;
+}
+.main_menu_list > li.active > a
+{
+	color: #11100e;
+	font-weight: bold;
+}
+.main_menu_list li a
+{
+	display: block;
+	font-size: 17px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	line-height: 85px;
+	white-space: nowrap;
+	transition: all 200ms ease;
+}
+.main_menu_list li a:hover
+{
+	color: #99ed31;
 }
 
 /*********************************
@@ -188,7 +237,7 @@ header{
 .cipherInformation
 {
 	padding: 6%;
-	background: #fefdb9;
+	background: #f0f0f0;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
@@ -241,7 +290,7 @@ header{
 	left: 5px;
 	width: 68px;
 	height: 3px;
-	background: #c3bb16;
+	background: #99ed31;
 	content: '';
 }
 .informationText{
@@ -260,14 +309,17 @@ header{
 *********************************/
 
 .cipherArea{
-	background-color: #fefdb9;
+	background-color: #f0f0f0;
 	color: #11100e;
-	width: 70%;
-	text-align: center;
+	width: 100%;
 	margin: 86px auto;
 	padding: 6%;
 	padding-bottom: 0;
-	margin-bottom: 2%;
+  margin-bottom: 2%;
+}
+.cipher{
+  display: inline-block;
+  width: 100%;
 }
 label {
 	display: inline-block;
@@ -275,13 +327,12 @@ label {
 }
 input, textarea {
 	font-family: 'Exo', sans-serif;
-    font: 1em;
-    box-sizing: border-box;
+  font: 1em;
+  box-sizing: border-box;
 	color: #ffffff;
 	background-color: #4a819b;
 	border: none;
 	border-radius: 5px;
-	display: block;
 	margin: 9px auto 0 auto;
 	padding: 5px;
 }
@@ -297,30 +348,31 @@ textarea{
 	resize: vertical;
 	width: 100%;
 }
-#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
-	display: inline-block !important;
-	text-align: center !important;
-}
 .introducingText, .introducingNumber, .cipherText{
 	text-align: left;
-	margin: 3% 0;
+	margin: 0;
 	font-size: 16px;
 }
-.buttonsContainer, .stepsButtons{
-	display: inline-block !important;
-	text-align: center !important;
+.introducingText, .cipherText, .buttonsContainer{
+  display: inline-block;
 }
-#intruction{
-	text-align: center !important;
+.introducingText{
+  width: 40%;
 }
-.stepsButtons{
-	margin-top: 10%;
+.cipherText{
+  width: 40%;
 }
-#buttonOpenSteps, #buttonCloseSteps{
-	background-color: #4a819b;
+.buttonsContainer{
+  width: 19.5%;
+  text-align: center;
+  top: 50px;
 }
-#buttonOpenSteps:hover a, #buttonCloseSteps:hover a{
-	color: #c3bb16;
+.introducingNumber{
+  text-align: center;
+}
+#buttonDecode, #buttonEncode{
+  margin-top: 10px;
+  width: 100px;
 }
 
 /*********************************
@@ -328,7 +380,7 @@ textarea{
 *********************************/
 .cipherSteps{
 	margin: 0 -15px 6% -15px;
-	background: #fefdb9;
+	background: #f0f0f0;
 }
 .cipherTitleContainer{
 	width: 100%;

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cipher Area</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <!-- Barra de arriba o barra de navegacion -->
+    <div class="topBar">
+      <!-- Contenedor del logo -->
+      <div class="logoContainer">
+        <!-- Logo -->
+        <div class="logo">
+          <!-- Logo linkeable a pagina de incio -->
+          <a id="logoLink" href="index.html">
+            <div class="logoLine1">
+              <span>Caesar</span>Cipher</div>
+          </a>
+        </div>
+      </div>
+      <div class="navBar">
+        <div class="main_menu_content">
+          <ul class="main_menu_list">
+            <li>
+              <a href="#cipherInformation">Cipher Information</a>
+            </li>
+            <li>
+              <a href="#cipherSteps">Cipher Steps</a>
+            </li>
+            <li>
+              <a href="cipherArea.html">Cipher Area</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CIPHER AREA -->
+
+  <div class="cipherArea" id="cipherArea">
+    <!-- una columna -->
+    <div class="col">
+      <!-- una fila -->
+      <div class="row">
+        <!-- una columna -->
+        <div class="col">
+          <!-- Contenedor del titulo y subtitulo-->
+          <div class="cipherTitleContainer">
+            <div class="subtitle">área de</div>
+            <h1 class="title">Cifrado / Descifrado</h1>
+          </div>
+        </div>
+      </div>
+      <div class="cipher">
+        <!-- Introduciendo el texto para cifrar o descifrar-->
+        <div class="introducingText">
+          <label for="msg">Introduzca el texto que desea cifrar/descifrar:</label>
+          <textarea id="cipherMessage" name="cipherMessage"></textarea>
+        </div>
+
+        <!-- Contenedor de botones de cifrado y descifrado -->
+        <div class="buttonsContainer">
+          <button type="submit" id="buttonEncode">Cifrar</button>
+          <!-- Introduciendo la posicion para cirfrar o descifrar-->
+          <div class="introducingNumber">
+            <label for="number">Shift:</label>
+            <input type="number" id="cipherNumber" name="cipherNumber" value="0" min="0" />
+          </div>
+          <button type="submit" id="buttonDecode">Descifrar</button>
+        </div>
+        <!-- Mostrando el texto descifrado o cifrado -->
+        <div class="cipherText">
+          <label for="msg">Texto descifrado/cifrado:</label>
+          <textarea id="cipherText" name="cipherText" disabled></textarea>
+        </div>
+      </div>
+
+      <!-- Boton para copiar el texto descrifrado o cifrado en el portapapele
+      <div class="copyText">
+        <div type="submit" class="button" id="buttonCopyText">
+          <a>Copiar Texto</a>
+        </div>
+      </div>s-->
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>

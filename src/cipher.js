@@ -9,7 +9,7 @@ window.cipher = {
     // obteniendo el residuo del offset
     offset = offset % 26;
     // bucle para almacenar las letras cifradas
-    for (let i = 0 ; i < string.length ; i++) {
+    for (let i = 0; i < string.length; i++) {
       // convirtiendo a ASCII
       let cAscii = string.charCodeAt(i);
       let letter;
@@ -35,17 +35,17 @@ window.cipher = {
     // obteniendo el residuo del offset
     offset = offset % 26;
     // bucle para almacenar las letras descifradas
-    for (let i = 0 ; i < string.length ; i++) {
+    for (let i = 0; i < string.length; i++) {
       // convirtiendo a ASCII
       let cAscii = string.charCodeAt(i);
       let letter;
       // diviendo el descifrado por letras mayusculas, minusculas y cuando no sea letra, no descifrar
       if ((cAscii >= 65) && (cAscii <= 90)) {
         letter = (cAscii - 65 - offset + 26) % 26 + 65;
-      }else if ((cAscii >= 97) && (cAscii <= 122)) {
+      } else if ((cAscii >= 97) && (cAscii <= 122)) {
         letter = (cAscii - 97 - offset + 26) % 26 + 97;
-      }else {
-        letter=cAscii;
+      } else {
+        letter = cAscii;
       }
       // almacenando las letras descifradas y convirtiendolas en string
       ciphertext += String.fromCharCode(letter);
@@ -69,4 +69,3 @@ window.cipher = {
     }
   }
 };
-  

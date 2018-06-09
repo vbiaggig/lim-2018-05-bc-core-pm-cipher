@@ -2,22 +2,10 @@
 document.getElementById('buttonInformation').addEventListener('click', () => {
     // Desplegando cipherArea
     document.getElementById('cipherArea').style.display = '';
-    // Ocultando cipherInformation
-    document.getElementById('cipherInformation').style.display = 'none';
-});
-
-// Boton para volver al incio de la pagina
-document.getElementById('logoLink').addEventListener('click', () => {
-    // Ocultando cipherArea
-    document.getElementById('cipherArea').style.display = 'none';
-    // Ocultando cipherSteps
-    document.getElementById('cipherSteps').style.display = 'none';
-    // Desplegando cipherInformation
-    document.getElementById('cipherInformation').style.display = '';
 });
 
 // Boton de copiar texto descifrado o cifrado en el portapapeles
-document.getElementById('buttonCopyText').addEventListener('click', ()=>{
+document.getElementById('buttonCopyText').addEventListener('click', () => {
     // auxiliar que almacena un elemento parrafo creado
     let aux = document.createElement('input');
     // dandole un atributo al auxiliar que establece un nombre y un valor
@@ -32,22 +20,8 @@ document.getElementById('buttonCopyText').addEventListener('click', ()=>{
     document.body.removeChild(aux);
 })
 
-// Boton para abrir las instrucciones
-document.getElementById('buttonOpenSteps').addEventListener('click', () => {
-    document.getElementById('cipherSteps').style.display = '';
-    // Dandole scroll a donde abre el div
-    let elmnt = document.getElementById('scroll');
-    elmnt.scrollIntoView();
-    // window.scroll(0,1200);
-});
-
-// Boton para cerrar las instrucciones
-document.getElementById('buttonCloseSteps').addEventListener('click', () => {
-    document.getElementById('cipherSteps').style.display = 'none';
-});
-
 // Boton para realizar la funcion cifrar
-document.getElementById('buttonEncode').addEventListener('click', ()=>{
+document.getElementById('buttonEncode').addEventListener('click', () => {
     // almacenando elementos de area de texto del mensaje escrito
     const cipherMessage = document.getElementById('cipherMessage').value;
     // almacenando posicion
@@ -58,7 +32,7 @@ document.getElementById('buttonEncode').addEventListener('click', ()=>{
 });
 
 // Boton para realizar la funcion descifrar 
-document.getElementById('buttonDecode').addEventListener('click', ()=>{
+document.getElementById('buttonDecode').addEventListener('click', () => {
     // almacenando elementos de area de texto del mensaje escrito
     const cipherMessage = document.getElementById('cipherMessage').value;
     // almacenando posicion
