@@ -1,9 +1,3 @@
-// Boton para desplegar cipherArea y ocultar cipherInformation
-document.getElementById('buttonInformation').addEventListener('click', () => {
-    // Desplegando cipherArea
-    document.getElementById('cipherArea').style.display = '';
-});
-
 // Boton de copiar texto descifrado o cifrado en el portapapeles
 document.getElementById('buttonCopyText').addEventListener('click', () => {
     // auxiliar que almacena un elemento parrafo creado
