@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -26,14 +28,19 @@
             </a>
           </div>
         </div>
-        <div class="navBar">
-          <div class="main_menu_content">
-            <ul class="main_menu_list">
-              <li><a href="#cipherInformation">Cipher Information</a></li>
-              <li><a href="#cipherSteps">Cipher Steps</a></li>
-              <li><a href="cipherArea.html">Cipher Area</a></li>
-            </ul>
-          </div>
+        <div class="topnav" id="topnavID">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a class="invisible"></a>
+          <a href="cipherArea.html">
+            <i class="fas fa-code"></i>Cipher Area</a>
+          <a href="index.html#cipherSteps">
+            <i class="fas fa-shoe-prints"></i>Steps</a>
+          <a href="index.html#cipherInformation">
+            <i class="fas fa-home"></i>Home</a>
         </div>
       </div>
     </header>
@@ -170,7 +177,7 @@
         </div>
       </div>
     </div>
-    
+
   </div>
   <script src="cipher.js"></script>
   <script src="index.js"></script>

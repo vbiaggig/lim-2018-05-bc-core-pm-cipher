@@ -187,9 +187,6 @@ header{
 	color:  #99ed31;
 	font-weight: bold;
 }
-
-
-
 .topnav {
   overflow: hidden;
   background: #3b6072;
@@ -219,6 +216,9 @@ header{
 .topnav a:hover {
   color: #99ed31;
   background: #588ea8;
+}
+#topnavID a:hover{
+background: #ffffff00;
 }
 .topnav .icon {
   display: none;
@@ -481,34 +481,6 @@ textarea{
 		height: 300px;
 		margin-top: 30%;
 	}
-  .navBar{
-    top: 86px;
-    width: 70%;
-    height: 100%;
-    margin: 0;
-    position: fixed;
-    right: 0;
-    text-align: left;
-    left: auto;
-    background: #3b6072d5;
-  }
-  .main_menu_list > li{
-    display: block;
-    float: none;
-    border-bottom: 1px solid #ffffff;
-  }
-  .navBarResponsive{
-    display: block;
-    width: 30%;
-    top: -20px;
-    left: 90%;
-  }
-  .navBarResponsive .btnMenu{
-    display: block;
-    padding: 0 20px 15px 20px;
-    color: #ffffff;
-    font-size: 28px;
-  }
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -535,6 +507,7 @@ textarea{
     right: 0 !important;
     width: 70%;
     height: 3000%;
+    top: -52px;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -690,6 +663,11 @@ textarea{
 		margin-top: 8%;
 	}
 }
+@media screen and (max-width: 576px) {
+  .topnav.responsive {
+    top: -48px;
+  }
+}
 
 /*********************************
 7.2. 480px
@@ -784,5 +762,11 @@ textarea{
 	}
 	#buttonOpenSteps, #buttonCloseSteps{
 		width: 65%;
-	}
+  }
+  @media screen and (max-width: 576px) {
+    .topnav.responsive {
+      top: -39px;
+      font-size: 17px;
+    }
+  }
 }
