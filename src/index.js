@@ -1,3 +1,16 @@
+/*document.getElementById('navBarResponsiveOpen').addEventListener('click', () => {
+    let cont = 1;
+    console.log("hola");
+    if(cont == 1){
+        document.getElementById("navBarOpen").style.display = "";
+        cont = 0;
+        alert("hola");
+    }else{
+        document.getElementById("navBarOpen").style.display = "none";
+        alert("chao");
+    }
+});*/
+
 // Boton de copiar texto descifrado o cifrado en el portapapeles
 document.getElementById('buttonCopyText').addEventListener('click', () => {
     // auxiliar que almacena un elemento parrafo creado
@@ -12,7 +25,7 @@ document.getElementById('buttonCopyText').addEventListener('click', () => {
     document.execCommand('copy');
     // removiendo el auxiliar
     document.body.removeChild(aux);
-})
+});
 
 // Boton para realizar la funcion cifrar
 document.getElementById('buttonEncode').addEventListener('click', () => {
@@ -35,3 +48,12 @@ document.getElementById('buttonDecode').addEventListener('click', () => {
     const cipherText = document.getElementById('cipherText');
     cipherText.innerHTML = cipher.decode(cipherNumber, cipherMessage);
 });
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
