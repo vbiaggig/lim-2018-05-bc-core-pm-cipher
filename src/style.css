@@ -7,7 +7,8 @@
 1. Fonts
 2. Body and some general stuff
 3. Header
-	3.1 Top bar
+  3.1 Top bar
+  3.2 Main Menu
 4. CIPHER INFORMATION
 5. CIPHER AREA
 6. CIPHER STEPS
@@ -22,7 +23,7 @@
 /***********
 1. Fonts
 ***********/
-@import url('https://fonts.googleapis.com/css?family=Exo|Amatic+SC|Dosis');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Poor+Story');
 
 /*********************************
 2. Body and some general stuff
@@ -30,13 +31,13 @@
 *{
 	margin: 0;
 	padding: 0;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: #000000 0 0 1px;
 }
 body{
 	font-family: 'Dosis', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #fefdb9;
+	background: #f0f0f0;
 	color: #494646;
 }
 div{
@@ -66,14 +67,19 @@ p{
 }
 .col{
 	position:relative;
-    width:100%;
-    min-height:1px;
+  width:100%;
+  min-height:1px;
 	padding: auto 15px;
 }
 .col-4{
 	-ms-flex:0 0 25%;
 	flex:0 0 25%;
 	max-width:25%;
+}
+.col-3{
+  -ms-flex:0 0 33.33%;
+	flex:0 0 33.33%;
+	max-width: 33.33%;
 }
 .text-center{
 	text-align:center!important;
@@ -82,16 +88,15 @@ p{
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 8% auto;
 }
 .button{
 	margin-top: 39px;
 }
 .button{
-	width: 180px;
+	width: 220px;
 	height: 65px;
-	background: #c3bb16;
+	background: #99ed31;
 	text-align: center;
 	cursor:pointer; 
 	cursor: hand;
@@ -101,7 +106,7 @@ p{
 	display: block;
 	position: relative;
 	line-height: 65px;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 20px;
 	font-weight: bold;
 	color: #FFFFFF;
@@ -157,8 +162,8 @@ header{
 3.1 Top bar
 *********************************/
 .topBar{
-    background: #4a819b;
-    width: 100%;
+  background: #3b6072;
+  width: 100%;
 	height: 86px;
 }
 .logoContainer{
@@ -168,19 +173,55 @@ header{
 	padding-left: 63px;
 }
 .logoLine1{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 40px;
 	line-height: 0.75;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-    color: #f5f9fa;
+  color: #f5f9fa;
 	padding-top: 15px;
 	cursor:pointer; 
 	cursor: hand;
 }
 .logoLine1 span{
-	color:  #c3bb16;
+	color:  #99ed31;
 	font-weight: bold;
+}
+.topnav {
+  overflow: hidden;
+  background: #3b6072;
+  text-align: right;
+  width: 51%;
+  top: -3.5em;
+  float: right;
+  font-family: 'Poor Story', cursive;
+  text-transform: uppercase;
+}
+.topnav .invisible{
+  display: none;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 62px;
+  text-transform: uppercase;
+	white-space: nowrap;
+	transition: all 200ms ease;
+}
+.topnav a:hover {
+  color: #99ed31;
+  background: #588ea8;
+}
+#topnavID a:hover{
+background: #ffffff00;
+}
+.topnav .icon {
+  display: none;
 }
 
 /*********************************
@@ -189,7 +230,7 @@ header{
 .cipherInformation
 {
 	padding: 6%;
-	background: #fefdb9;
+	background: #f0f0f0;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
@@ -208,19 +249,18 @@ header{
 }
 .informationImage{
 	max-width: 83%;
-	margin-right: 66px;
 	text-align:right!important;
 	text-align:center!important;
-	margin-left: 18%;
 }
 .informationImage2{
 	display: none;
 }
 .informationImage img{
-	max-width: 83%;
+	width: 350px;
+	height: 400px;
 }
 .title, .cipherTitleContainer{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	color: #212121;
 	margin-top: -1px;
 }
@@ -228,7 +268,7 @@ header{
 	font-size: 50px;
 }
 .subtitle{
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Poor Story', cursive;
 	font-size: 25px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -243,7 +283,7 @@ header{
 	left: 5px;
 	width: 68px;
 	height: 3px;
-	background: #c3bb16;
+	background: #99ed31;
 	content: '';
 }
 .informationText{
@@ -262,28 +302,28 @@ header{
 *********************************/
 
 .cipherArea{
-	background-color: #fefdb9;
+	background-color: #f0f0f0;
 	color: #11100e;
-	width: 70%;
-	text-align: center;
+	width: 100%;
 	margin: 86px auto;
 	padding: 6%;
 	padding-bottom: 0;
-	margin-bottom: 2%;
+  margin-bottom: 2%;
+}
+.cipher{
+  display: inline-block;
+  width: 100%;
 }
 label {
 	display: inline-block;
     text-align: left;
 }
 input, textarea {
-	font-family: 'Exo', sans-serif;
-    font: 1em;
-    box-sizing: border-box;
-	color: #ffffff;
-	background-color: #4a819b;
+  font: 1em;
+  box-sizing: border-box;
+	color: #313131;
 	border: none;
 	border-radius: 5px;
-	display: block;
 	margin: 9px auto 0 auto;
 	padding: 5px;
 }
@@ -295,22 +335,99 @@ input:focus{
 }
 textarea{
 	vertical-align: top;
-	height: 5em;
-	resize: vertical;
+	height: 10em;
+	resize: none;
 	width: 100%;
-}
-#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
-	display: inline-block !important;
-	text-align: center !important;
 }
 .introducingText, .introducingNumber, .cipherText{
 	text-align: left;
-	margin: 3% 0;
+	margin: 0;
+	font-size: 16px;
+}
+.introducingText, .cipherText, .buttonsContainer{
+  display: inline-block;
+}
+.introducingText{
+  width: 40%;
+}
+.introducingText textarea{
+	background-color: #4a819b6e;
+}
+.cipherText{
+  width: 40%;
+}
+.cipherText textarea{
+	background-color: #4a819b9d;
+}
+.buttonsContainer{
+  width: 19%;
+  text-align: center;
+  top: 90px;
+  height: 130px;
+}
+.introducingNumber{
+  text-align: center;
+}
+#buttonDecode, #buttonEncode{
+  margin-top: 10px;
+  width: 100px;
+}
+
+/*********************************
+5 CIPHER STEPS
+*********************************/
+.cipherSteps{
+	margin: 0 -15px 6% -15px;
+	background: #f0f0f0;
+}
+.cipherTitleContainer{
+	width: 100%;
+	text-align: center;
+}
+.cipherTitleContainer .subtitle::after{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 68px;
+	height: 3px;
+	content: '';
+}
+.cipherStepsRow{
+	margin-top: 79px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.cipherStepsImage{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+.cipherStepsImage img{
+	max-width: 100%;
+}
+.cipherStepsTitle{
+	font-family: 'Poor Story', cursive;
+	font-size: 35px;
+	color: #212121;
+	margin-top: 11px;
+}
+.cipherStepsText{
+	margin-top: 32px;
 	font-size: 20px;
 }
-.buttonsContainer, .stepsButtons{
-	display: inline-block !important;
-	text-align: center !important;
+.cipherStepsText p:last-of-type{
+	margin-bottom: 0;
+}
+.cipherSteps .stepsButtons{
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
+.cipherStepsItem{
+	margin: 4%;
+	text-align: center;
 }
 #intruction{
 	text-align: center !important;
@@ -382,6 +499,7 @@ textarea{
 }
 
 
+
 /*********************************
 7. Responsive
 *********************************/
@@ -427,10 +545,54 @@ textarea{
 	.informationText{
 		font-size: 18px;
 	}
+	.informationImage img{
+		width: 250px;
+		height: 300px;
+		margin-top: 30%;
+	}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    right: 0;
+    top: 0;
+    height: 65px;
+  }
+  .topnav .invisible{
+    display: none !important;
+  }
+  #myTopnav{
+    background: #3b6072d5;
+  }
+  #topnavID{
+    width: 100%;
+    background: none;
+    height: 93px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative;
+    right: 0 !important;
+    width: 70%;
+    height: 3000%;
+    top: -52px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+  }
 }
 
 /*********************************
-7.2. 576px
+7.3. 576px
 *********************************/
 @media only screen and (max-width: 576px)
 {
@@ -473,7 +635,7 @@ textarea{
 		width: 82%;
 	}
 	.subtitle{
-		font-size: 13px;
+		font-size: 18px;
 		padding-left: 1px;
 		text-align: right !important;
 	}
@@ -531,8 +693,13 @@ textarea{
 	.buttonsContainer, .stepsButtons{
 		width: 100%;
 	}
-	#buttonEncode, #buttonDecode, #buttonCopyText, #buttonOpenSteps, #buttonCloseSteps{
+	#buttonEncode, #buttonDecode, #buttonCopyText{
 		width: 32%;
+		margin: 0;
+		font-size: 14px;
+	}
+	#buttonOpenSteps, #buttonCloseSteps{
+		width: 52%;
 		margin: 0;
 		font-size: 14px;
 	}
@@ -548,16 +715,27 @@ textarea{
 	textarea, #cipherNumber{
 		font-size: 11px;
 	}
-	.cipherStepsImage, .cipherStepsTitle{
-		display: inline-block;
-	}
 	.cipherStepsImage{
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 	}
 	.cipherStepsText p, .informationText p{
 		font-size: 20px;
 	}
+	.cipherStepsTitle{
+		margin-top: 2px;
+	}
+	.cipherStepsText{
+		margin-top: 8px;
+	}
+	.cipherStepsItem{
+		margin-top: 8%;
+	}
+}
+@media screen and (max-width: 576px) {
+  .topnav.responsive {
+    top: -48px;
+  }
 }
 
 /*********************************
@@ -565,7 +743,7 @@ textarea{
 *********************************/
 @media only screen and (max-width: 480px){
 	#buttonOpenSteps, #buttonCloseSteps{
-		width: 40%;
+		width: 59%;
 	}
 	.logoLine1{
 		font-size: 30px;
@@ -588,7 +766,10 @@ textarea{
 	}
 	.cipherInformation, .cipherArea{
 		margin-top: 70px;
-	}
+  }
+  #topnavID{
+    height: 80px;
+  }
 }
 
 
@@ -648,4 +829,13 @@ textarea{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	#buttonOpenSteps, #buttonCloseSteps{
+		width: 65%;
+  }
+  @media screen and (max-width: 576px) {
+    .topnav.responsive {
+      top: -39px;
+      font-size: 17px;
+    }
+  }
 }

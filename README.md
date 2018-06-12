@@ -4,13 +4,17 @@
 
 Esta aplicación cifra mensajes del usuario con uno de los cifrados más conocidos, "CIFRADO CESAR". Estos mensajes no son entendibles a simple vista para ello, esta aplicación también te ayuda a descifrar los mensajes.
 
-## DEMO 
+## DEMO
 
-![Demo](demo.gif)
+Entra a la aplicación web aquí -> <https://vbiaggi10.github.io/lim-2018-05-bc-core-pm-cipher/src/>
+
+![Demo](readme/demo.gif)
 
 ## Preámbulo
 
 Si tu mamá no para de leer tus mensajes de WhastApp, de Facebook, de Instragram, de Twitter, hasta te encuentra en Tinder. Usa esta app, para cifrar tus mensajes privados, tu nombre en tinder, tus textos de amor, lo que sea que quieras ocultar y compártelo con tus amigos para que lo descifren con el **shift** que usaste.
+
+## Producto
 
 ### Desarrollo del producto
 
@@ -28,17 +32,27 @@ Despues llegué a una conclusión.
 
 Para empezar a trabajar el producto comencé por la estructura básica del HTML con un estilo básico de CSS.
 
-La segunda parte de la elaboración del producto fue programar el funcionamiento y el objetivo del producto, en este caso cifrar y descifrar un texto y que el usuario indique el posicionamiento.
+La segunda parte de la elaboración del producto fue hacer un DFD (Diagrama de Flujo de Datos) para el entendimiento del funcionamiento.
 
-La tercera parte y última fue mejorar el CSS en un nivel más avanzado.
+![dfd](readme/dfd.jpg)
+
+Luego procedí a realizar un algoritmo para luego poder plasmarlo en el lenguaje de programación correspondiente.
+
+![algoritmo](readme/algoritmo.jpg)
+
+Después programé el funcionamiento y el objetivo del producto, en este caso cifrar y descifrar un texto y que el usuario indique el posicionamiento.
+
+La tercera parte y última fue mejorar el CSS en un nivel más avanzado haciéndolo responsive y más agradable para el usuario.
+
+El hacker edition fue culminado con éxito luego de todo el desarrollo del producto.
 
 ### Objetivos del producto
 
-Todos pueden usar este producto, ya que está diseñado para todo tipo de público. Está indicado en el mismo producto los pasos que se deben realizar para usar el cifrado o descifrado de lo que el usuario desee.
+Todos pueden usar este producto, ya que está diseñado para todo tipo de público alfabetizado; desde un menor de edad ,hasta un adulto mayor. Está indicado en el mismo producto los pasos que se deben realizar para usar correctamente el cifrado o descifrado de lo que el usuario desee.
 
 El objetivo es que el usuario pueda cifrar o descifrar su mensaje sin ningún problema y con fácil entendimiento del producto, es por ello que el mismo producto tiene los pasos de como llevar a cabo su cometido.
 
-Es por eso que éste producto resolverá todos sus problemas.
+Es por eso que éste producto resolverá todos sus problemas en cuanto a mandar un mensaje secreto y hasta poder revelarlo.
 
 ## Información
 
