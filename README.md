@@ -24,11 +24,11 @@ Para desarrollar el producto inicié haciendo un mockup base para presentar al u
 
 Luego realicé entrevistas a diferentes usuarios para poder llegar a una conclusión de como podría ser el producto.
 
-*Para poder ver las entrevistas necesitas clonar el repositorio. El documento "Entrevista a usuarios" se encuentra dentro de la carpeta "Entrevistas"*
+![entrevistas](entrevistas/entrevistas.PNG)
 
 Despues llegué a una conclusión.
 
-![mockup-base](mockup/mockup_oficial.png)
+![mockup-oficial](mockup/mockup_oficial.png)
 
 Para empezar a trabajar el producto comencé por la estructura básica del HTML con un estilo básico de CSS.
 
