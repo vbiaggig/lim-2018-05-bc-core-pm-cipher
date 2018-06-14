@@ -24,7 +24,7 @@ Para desarrollar el producto inicié haciendo un mockup base para presentar al u
 
 Luego realicé entrevistas a diferentes usuarios para poder llegar a una conclusión de como podría ser el producto.
 
-![entrevistas](entrevistas/entrevistas.png)
+![entrevistas](entrevistas/entrevistas.PNG)
 
 Despues llegué a una conclusión.
 
